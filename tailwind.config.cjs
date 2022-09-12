@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'impact': ["Impact"]
+    },
     extend: {
       blur: {
         xs: '2px'
@@ -27,4 +30,8 @@ module.exports = {
   plugins: [
     require("daisyui"),
   ],
+  daisyui: {
+    base: false,
+
+  }
 }

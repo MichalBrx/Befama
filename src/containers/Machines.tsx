@@ -21,13 +21,14 @@ const Machnies = () => {
         <div className="h-auto w-full flex justify-center flex-wrap gap-5">
             
             {machines.map((machine: any, index: React.Key) =>(
-                <div key={index} className="card card-compact w-72 bg-base-100 shadow-xl my-10 ">
-                    <figure><img src={machine.src} alt="Shoes" /></figure>
+                <div key={index} className="card card-compact w-72 bg-base-100 shadow-xl my-10">
+                    <figure><img src={machine.src} alt="Shoes"  className="h-52"/></figure>
                     <div className="card-body">
                         <h2 className="card-title">{machine.type}</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+
+                        <div className="card-actions justify-end mt-auto">
+                            <button className="btn">Dowiedz się więcej... </button>
+                            {/* <a className="link link-hover text-lg">Dowiedz się więcej...</a> */}
                         </div>
                     </div>
                 </div>

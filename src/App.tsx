@@ -7,6 +7,7 @@ import Background from './containers/Background'
 import Machines from './containers/Machines'
 import Features from './containers/Features'
 import ContactForm from './containers/ContactForm'
+import Footer from './containers/Footer'
 
 function App() {
 
@@ -80,7 +81,7 @@ function App() {
       <Background />
       <Features />
       <ContactForm />
-        
+      <Footer />
 
 
       {/* <div className="h-20 w-screen bg-white"></div>
