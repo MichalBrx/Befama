@@ -79,9 +79,9 @@ function App() {
 
       <Navbar/>
       <Background />
-      <Features />
+
       <ContactForm />
-      <Footer />
+
 
 
       {/* <div className="h-20 w-screen bg-white"></div>
