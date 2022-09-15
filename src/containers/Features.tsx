@@ -6,10 +6,10 @@ import { FaScrewdriver, FaTools, FaDropbox, } from "react-icons/fa"
 
 const Features = () => {
   return (
-    <div id='container' className="flex justify-center border mx-1 roudned-lg">
+    <div id='services' className="flex justify-center border mx-1 roudned-lg">
         <div className="p-5">
-        <h1 className="text-4xl font-bold p-5 text-center mb-16">Usługi które oferujemy</h1>
-        <div className="flex gap-10 flex-wrap text-center justify-center">
+        <h1 className="text-4xl font-bold p-5 text-center mb-2">Usługi które oferujemy</h1>
+        <div className="flex gap-2 flex-wrap text-center justify-center">
             <div className="flex justify-center p-3 ">
              <MdBuild className="w-8 h-8 self-center"/>
               <p className="w-4/5 text-left pl-5">Projektowania oraz konstrukcji maszyn i urządzeń włókienniczych</p>
@@ -46,7 +46,7 @@ const Features = () => {
              <MdOutlineMiscellaneousServices className="w-8 h-8 self-center"/>
               <p className="w-4/5 text-left pl-5">Poza tym oferujemy szereg innych usług oraz części zamiennych </p>
             </div>
-            <button className='btn btn-primary'>Dowiedz się więcej...</button>
+            <button className='btn btn-primary mt-3'>Dowiedz się więcej...</button>
             
 
         </div>

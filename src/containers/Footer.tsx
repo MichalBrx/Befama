@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto bg-black flex-wrap flex gap-16 justify-center py-5 text-white">
+    <div className="w-full h-auto bg-black flex-wrap flex gap-8 justify-center py-5 text-white">
         <div id='COMPANY' className="p-3 ">
             <p className="text-center text-4xl font-impact">BEFAMA Sp. z o.o.</p>
             <p className="text-center text-lg"> Serce Technologi</p>

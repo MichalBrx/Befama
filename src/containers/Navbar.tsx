@@ -1,11 +1,21 @@
 import React, {useState} from 'react'
 import {MenuOutlined} from '@ant-design/icons'
-import Machnies from './Machines'
+import Features from './Features'
 
 
 const Navbar = () => {
 
     const [lang, setLang] = useState("PL")
+
+    const handleClick = (e: any) => {
+      e.preventDefault()
+      const target = e.target.getAttribute('href')
+      const location = document.querySelector(target).offsetTop
+      window.scrollTo({
+        left: 0,
+        top: location - 60
+      })
+    }
 
   return (
     <div>
@@ -19,11 +29,11 @@ const Navbar = () => {
 
             <div className="flex items-center font-medium text-black">
             <div className="cursor-pointer group transition-all duration-300 p-3 truncate hidden">O nas<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-3">Usługi<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-3"><a href="#services" onClick={(e) => handleClick(e)}>Usługi</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-3">Kontakt<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="dropdown dropdown-hover mx-2" id="dropdown Menu"> 
                 <label className=""><MenuOutlined  style={{fontSize:"1.5rem", cursor:'pointer'}}/></label> 
-                <ul className="dropdown-content p-2 rounded -left-10 pt-1 w-28 bg-white text-center">
+                <ul className="dropdown-content p-2 rounded -left-10 pt-1 w-28 bg-white text-center shadow-xl border-t">
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>O nas</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Kariera</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Maszyny</a></li>

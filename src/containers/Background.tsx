@@ -18,17 +18,7 @@ const Background = () => {
           <img src='./main2.jpg' alt='Machine' className="saturate-50 h-screen object-cover w-screen  opacity-70" id='main_img'></img>
 
 
-          {/* <div className="w-full bg-[url('./marmur.jpg')]  image-full  flex justify-center h-auto object-cover object-center opacity-80">
-
-            <div className="text-center rounded-none p-3 border-y-2 border-black w-full">
-              <h2 className="card-title flex justify-center mb-3"><BulbOutlined />Czy wiesz, że...</h2>
-              <p>W najbliższym czasie  zostanie uruchomiona nowa hala montażowa w Żywcu</p>
-
-            </div>
-          </div> */}
-
-
-          <div className="bg-white py-20">
+          <div className="bg-white py-10">
 
             <Machnies />
 
@@ -42,7 +32,7 @@ const Background = () => {
 
           
           
-          <div className="bg-white py-36 flex justify-center">
+          <div className="bg-white py-14 flex justify-center">
             <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
               <figure className="px-10 pt-10">
                 <img src="career.png" alt="career" className="rounded-xl hover:scale-125 duration-200 " />
