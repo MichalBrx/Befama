@@ -33,27 +33,31 @@ const Background = () => {
             <Machnies />
 
           </div>
+
+          <div className="bg-white border-none">
+
+            <Features />
+
+          </div>
+
           
-          <div className="bg-white ">
-            <div className="card w-full shadow-xl rounded-none">
+          
+          <div className="bg-white py-36 flex justify-center">
+            <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
               <figure className="px-10 pt-10">
-                <img src="career.png" alt="career" className="rounded-xl hover:scale-125 duration-200" />
+                <img src="career.png" alt="career" className="rounded-xl hover:scale-125 duration-200 " />
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title">Pracuj z Nami</h2>
                 <p>Jeżeli chcesz poszeżać swoją wiedzę i dalej się rozwijać wyślij do nas swoje CV!</p>
                 <div className="card-actions">
-                  <button className="btn btn-primary">Więcej...</button>
+                  <button className="btn btn-primary">Wyślij...</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white py-36">
 
-            <Features />
-
-          </div>
 
           <Footer />
 

@@ -17,7 +17,7 @@ function App() {
 
 
   return (
-    <div className="bg-white">
+    <div className="bg-white scroll-smooth">
 
 
       {/* <div id='NavBar' className="w-screen h-24 absolute shadow-current shadow-md bg-white z-10 flex justify-evenly xl:h-20 lg:h-16 md:justify-start sm:h-10 xs:w-screen">      
@@ -77,7 +77,7 @@ function App() {
 
       {/* PHONEEE PHONEEE PHONEEE PHONEEE PHONEEE below */}
 
-      <Navbar/>
+      <Navbar />
       <Background />
 
       <ContactForm />

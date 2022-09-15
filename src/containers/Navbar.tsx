@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <div id='NavBar' className="shadow-current shadow-md z-10 bg-white">      
+        <div id='NavBar' className="shadow-current shadow-md z-30 bg-white fixed top-0 w-full">      
 
         <div className="flex gap-5 mx-2">
 

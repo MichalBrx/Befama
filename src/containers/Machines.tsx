@@ -18,22 +18,23 @@ const Machnies = () => {
     ]
 
     return (
-        <div className="h-auto w-full flex justify-center flex-wrap gap-5">
-            
-            {machines.map((machine: any, index: React.Key) =>(
-                <div key={index} className="card card-compact w-72 bg-white border-t shadow-xl my-10 p-2">
-                    <figure><img src={machine.src} alt="Shoes"  className="h-52 rounded-lg"/></figure>
-                    <div className="card-body">
-                        <h2 className="card-title">{machine.type}</h2>
+        <div className="h-auto w-full ">
+            <h1 className="text-4xl  text-center font-semibold mb-5 border-t rounded-lg py-5 shadow-xl m-5">Maszyny które oferujemy</h1>
+            <div className='flex justify-center flex-wrap gap-5'>
+                {machines.map((machine: any, index: React.Key) =>(
+                    <div key={index} className="card card-compact w-72 bg-white border-t shadow-xl my-10 p-2">
+                        <figure><img src={machine.src} alt="Shoes"  className="h-52 rounded-lg"/></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">{machine.type}</h2>
 
-                        <div className="card-actions justify-end mt-auto">
-                            <button className="btn">Dowiedz się więcej... </button>
-                            {/* <a className="link link-hover text-lg">Dowiedz się więcej...</a> */}
+                            <div className="card-actions justify-end mt-auto">
+                                <button className="btn">Dowiedz się więcej... </button>
+                                {/* <a className="link link-hover text-lg">Dowiedz się więcej...</a> */}
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
-
+                ))}
+            </div>
 
 
 
