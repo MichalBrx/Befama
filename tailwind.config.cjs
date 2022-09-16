@@ -12,18 +12,14 @@ module.exports = {
         xs: '2px'
       },
       screens: {
-        'xl': {'max': '1400px'},
-        // => @media (max-width: 1023px) { ... }
-        'lg': {'max': '1023px'},
-        // => @media (max-width: 1023px) { ... }
+        'sm': '576px',
+        // => @media (min-width: 576px) { ... }
   
-        'md': {'max': '767px'},
-        // => @media (max-width: 767px) { ... }
+        'md': '960px',
+        // => @media (min-width: 960px) { ... }
   
-        'sm': {'max': '639px'},
-        // => @media (max-width: 639px) { ... }
-        'xs': {'max': '250px'},
-        // => @media (max-width: 250px) { ... }
+        'lg': '1440px',
+        // => @media (min-width: 1440px) { ... }
       },
     },
   },

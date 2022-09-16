@@ -32,7 +32,7 @@ const Background = () => {
 
           </div>
 
-          <div className="bg-white border-none">
+          <div className="bg-white border-none flex justify-center w-full">
             <AboutUs/>
           </div>
           
