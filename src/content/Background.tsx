@@ -1,8 +1,10 @@
 import React from 'react'
 import Machnies from './Machines'
 import Footer from './Footer'
-import Features from './Features'
-import { BulbOutlined } from '@ant-design/icons'
+import Services from './Services'
+import AboutUs from './AboutUs'
+
+
 const Background = () => {
 
     
@@ -26,16 +28,18 @@ const Background = () => {
 
           <div className="bg-white border-none">
 
-            <Features />
+            <Services />
 
           </div>
 
-          
+          <div className="bg-white border-none">
+            <AboutUs/>
+          </div>
           
           <div className="bg-white py-14 flex justify-center">
             <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
               <figure className="px-10 pt-10">
-                <img src="career.png" alt="career" className="rounded-xl hover:scale-125 duration-200 " />
+                <img src="career.png" alt="career" className="rounded-xl hover:scale-110 duration-200 " />
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title">Pracuj z Nami</h2>

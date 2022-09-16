@@ -4,7 +4,7 @@ import { GrMapLocation } from "react-icons/gr"
 import { AiOutlineLineChart } from "react-icons/ai"
 import { FaScrewdriver, FaTools, FaDropbox, } from "react-icons/fa"
 
-const Features = () => {
+const Services = () => {
   return (
     <div id='services' className="flex justify-center border mx-1 roudned-lg">
         <div className="p-5">
@@ -68,4 +68,4 @@ const Features = () => {
   )
 }
 
-export default Features
+export default Services

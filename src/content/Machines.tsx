@@ -18,7 +18,7 @@ const Machnies = () => {
     ]
 
     return (
-        <div className="h-auto w-full ">
+        <div className="h-auto w-full" id='Machines'>
             <h1 className="text-4xl  text-center font-semibold mb-5 border-t rounded-lg py-5 shadow-xl m-5">Maszyny które oferujemy</h1>
             <div className='flex justify-center flex-wrap gap-10'>
                 {machines.map((machine: any, index: React.Key) =>(

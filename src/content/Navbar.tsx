@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {MenuOutlined} from '@ant-design/icons'
-import Features from './Features'
+import Features from './Services'
 
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <div id='NavBar' className="shadow-current shadow-md z-30 bg-white fixed top-0 w-full">      
+        <div id='NavBar' className="shadow-md shadow-gray-700 z-30 bg-white fixed top-0 w-full">      
 
         <div className="flex gap-5 mx-2">
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <ul className="dropdown-content p-2 rounded -left-10 pt-1 w-28 bg-white text-center shadow-xl border-t">
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>O nas</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Kariera</a></li>
-                  <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Maszyny</a></li>
+                  <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a href="#Machines" onClick={(e) => handleClick(e)}>Maszyny</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Usługi</a></li>
                   <li className="hover:bg-gray-200 duration-200 py-3 rounded"><a>Linie produkcyjne</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Aktualności</a></li>
