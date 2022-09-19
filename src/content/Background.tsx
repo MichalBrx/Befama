@@ -1,13 +1,18 @@
 import React from 'react'
+import { useNavigate } from "react-router";
+
 import Machnies from './Machines'
 import Footer from './Footer'
 import Services from './Services'
 import AboutUs from './AboutUs'
+import ContactForm from './ContactForm'
 
+import Work from '../subpages/Work'
 
 const Background = () => {
 
-    
+const navigate = useNavigate()
+
   return (
     <div className=" bg-black">
       <div className="flex justify-center">
@@ -36,7 +41,7 @@ const Background = () => {
             <AboutUs/>
           </div>
           
-          <div className="bg-white py-14 flex justify-center">
+          <div className="bg-white py-14 flex justify-center flex-wrap gap-5">
             <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
               <figure className="px-10 pt-10">
                 <img src="career.png" alt="career" className="rounded-xl hover:scale-110 duration-200 " />
@@ -45,12 +50,12 @@ const Background = () => {
                 <h2 className="card-title">Pracuj z Nami</h2>
                 <p>Jeżeli chcesz poszeżać swoją wiedzę i dalej się rozwijać wyślij do nas swoje CV!</p>
                 <div className="card-actions">
-                  <button className="btn btn-primary">Wyślij...</button>
+                  <button className="btn btn-primary" onClick={() => navigate("/Work")}>Wyślij...</button>
                 </div>
               </div>
             </div>
+            <ContactForm />
           </div>
-
 
 
           <Footer />

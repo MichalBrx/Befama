@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
 import {MenuOutlined} from '@ant-design/icons'
 import Features from './Services'
-
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
 
     const [lang, setLang] = useState("PL")
 
@@ -30,11 +32,12 @@ const Navbar = () => {
             <div className="flex items-center font-medium text-black">
             <div className="cursor-pointer group transition-all duration-300 p-3 truncate hidden">O nas<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-3"><a href="#services" onClick={(e) => handleClick(e)}>Usługi</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-3">Kontakt<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-3"><a href="#contact" onClick={(e) => handleClick(e)}>Kontakt</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="dropdown dropdown-hover mx-2" id="dropdown Menu"> 
                 <label className=""><MenuOutlined  style={{fontSize:"1.5rem", cursor:'pointer'}}/></label> 
                 <ul className="dropdown-content p-2 rounded -left-10 pt-1 w-28 bg-white text-center shadow-xl border-t">
-                  <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>O nas</a></li>
+                <li className="hover:bg-gray-200 duration-200 py-3 rounded"><a onClick={() => navigate("/")}>Home</a></li>
+                  <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a href="#aboutus" onClick={(e) => handleClick(e)}>O nas</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Kariera</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a href="#Machines" onClick={(e) => handleClick(e)}>Maszyny</a></li>
                   <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a>Usługi</a></li>

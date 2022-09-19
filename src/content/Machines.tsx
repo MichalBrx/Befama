@@ -17,6 +17,10 @@ const Machnies = () => {
         {"type":"Maszyny Specjalnego Przeznaczenia","src":"./machines/Specjalne.jpg"}
     ]
 
+    const lines = [
+        {}
+    ]
+
     return (
         <div className="h-auto w-full" id='Machines'>
             <h1 className="text-4xl  text-center font-semibold mb-5 border-t rounded-lg py-5 shadow-xl m-5">Maszyny które oferujemy</h1>
@@ -36,11 +40,7 @@ const Machnies = () => {
                 ))}
             </div>
 
-
-
-        
-
-    </div>
+        </div>
     )
 }
 
