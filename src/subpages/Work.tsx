@@ -13,7 +13,7 @@ const Work = () => {
         <Navbar />
       </div>
 
-      <div className='pt-5 '>
+      <div className='pt-5 lg:mt-10'>
           <h1 className="text-4xl  text-center">Oferty Pracy</h1>
           <h3 className="text-xl text-center my-3">Poszukujemy osób do pracy na stanowiskach:</h3>
         </div>

@@ -11,7 +11,7 @@ const Serv = () => {
         <div className="h-16">
             <Navbar/>
         </div>
-        <div className='flex justify-center m-1'>
+        <div className='flex justify-center m-1 lg:mt-10'>
             <div className="flex flex-wrap max-w-lg justify-center my-8">
                 <h3 className="text-3xl font-semibold text-center">Oferujemy także szereg innych usług oraz części zamiennych takich jak:</h3>
                 <div className="">

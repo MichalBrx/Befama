@@ -11,7 +11,7 @@ const Services = () => {
 
   return (
     <div id='services' className="flex justify-center border mx-1 roudned-lg">
-        <div className="p-5">
+        <div className="p-5 ">
         <h1 className="text-4xl font-bold p-5 text-center mb-2">Usługi które oferujemy</h1>
         <div className="flex gap-2 flex-wrap text-center justify-center">
             <div className="flex justify-center p-3">
