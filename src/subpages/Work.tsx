@@ -3,11 +3,12 @@ import Navbar from '../content/Navbar'
 import Footer from '../content/Footer'
 
 import { MdBuild, MdControlCamera, MdOutlineDesignServices, MdOutlineMiscellaneousServices } from "react-icons/md"
+import ScrollToTop from '../functions/ScrollToTop'
 
 const Work = () => {
   return (
     <div>
-
+      <ScrollToTop />
       <div className="h-16 mb-1">
         <Navbar />
       </div>

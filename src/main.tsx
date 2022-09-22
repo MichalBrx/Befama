@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 <BrowserRouter>
+  
 
     <Routes >
       <Route path='/' element={<App />} />

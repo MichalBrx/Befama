@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import "./index.css"
 
-
 import Navbar from './content/Navbar'
 import Background from './content/Background'
 
-import ContactForm from './content/ContactForm'
+import ScrollToTop from './functions/ScrollToTop'
 
 
 function App() {
@@ -18,11 +17,11 @@ function App() {
   return (
     <div className="bg-white">
 
-
+      <ScrollToTop />
       <Navbar />
       <Background />
 
-      <ContactForm />
+  
       
     </div>
   )

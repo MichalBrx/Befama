@@ -7,7 +7,7 @@ import Services from './Services'
 import AboutUs from './AboutUs'
 import ContactForm from './ContactForm'
 
-import Work from '../subpages/Work'
+
 
 const Background = () => {
 
@@ -15,8 +15,8 @@ const navigate = useNavigate()
 
   return (
     <div className=" bg-black">
-      <div className="flex justify-center">
-            <span className="z-10 absolute  mt-20 p-5 ">
+      <div id='home' className="flex justify-center">
+            <span className="z-10 absolute  m-20 p-5 lg:m-28">
               <p className="text-4xl text-white text-center font-bold flex justify-center">Witaj w Befamie</p>
               <p className="text-base text-white text-center font-bold flex mt-2 justify-center ">Oferujemy nowe uslugi i czesci do naszych maszyn</p>
             </span>
@@ -37,11 +37,11 @@ const navigate = useNavigate()
 
           </div>
 
-          <div className="bg-white border-none flex justify-center w-full">
+          <div id='aboutUs' className="bg-white border-none flex justify-center w-full">
             <AboutUs/>
           </div>
           
-          <div className="bg-white py-14 flex justify-center flex-wrap gap-5">
+          <div id='work' className="bg-white py-14 flex justify-center flex-wrap gap-5">
             <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
               <figure className="px-10 pt-10">
                 <img src="career.png" alt="career" className="rounded-xl hover:scale-110 duration-200 " />

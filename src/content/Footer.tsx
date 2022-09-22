@@ -19,10 +19,10 @@ const Footer = () => {
             <h1 className="text-center text-2xl font-semibold">KONTAKT</h1>
             <ul className="text-teal-300 text-center text-base">
               <li className='my-2'>tel.: +48 33 8 611 760 <br/>e-mail: info@befama.com.pl</li>
-              <li className='my-2'><a className="link link-hover">Dział Sprzedaży </a></li>
-              <li className='my-2'><a className="link link-hover">Dział Konstrukcyjny </a></li>
-              <li className='my-2'><a className="link link-hover">Automatyka - Serwis </a></li>
-              <li className='my-2'><a className="link link-hover">Zaopatrzenie - Logistyka </a></li>
+              <li className='my-2 underline md:no-underline'><a className="link link-hover">Dział Sprzedaży </a></li>
+              <li className='my-2 underline md:no-underline'><a className="link link-hover">Dział Konstrukcyjny </a></li>
+              <li className='my-2 underline md:no-underline'><a className="link link-hover">Automatyka - Serwis </a></li>
+              <li className='my-2 underline md:no-underline'><a className="link link-hover">Zaopatrzenie - Logistyka </a></li>
             </ul>
         </div>
 

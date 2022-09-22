@@ -2,10 +2,12 @@ import React from 'react'
 
 import Footer from '../content/Footer'
 import Navbar from '../content/Navbar'
+import ScrollToTop from '../functions/ScrollToTop'
 
 const Serv = () => {
   return (
-    <div>
+    <div id='serv' >
+        <ScrollToTop />
         <div className="h-16">
             <Navbar/>
         </div>
