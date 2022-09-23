@@ -6,6 +6,7 @@ import Footer from './Footer'
 import Services from './Services'
 import AboutUs from './AboutUs'
 import ContactForm from './ContactForm'
+import Map from './Map';
 
 
 
@@ -17,15 +18,15 @@ const navigate = useNavigate()
     <div className=" bg-black">
       <div id='home' className="flex justify-center">
             <span className="z-10 absolute  m-20 p-5 lg:m-28">
-              <p className="text-4xl text-white text-center font-bold flex justify-center">Witaj w Befamie</p>
-              <p className="text-base text-white text-center font-bold flex mt-2 justify-center ">Oferujemy nowe uslugi i czesci do naszych maszyn</p>
+              <p className="text-4xl text-white text-center font-bold flex justify-center lg:text-5xl">Witaj w Befamie</p>
+              <p className="text-base text-white text-center font-bold flex mt-2 justify-center lg:text-lg">Oferujemy nowe uslugi i czesci do naszych maszyn</p>
             </span>
         </div>
         <section className="absolute bg-black "  id='bg-img'>
           <img src='./main2.jpg' alt='Machine' className="saturate-50 h-screen object-cover w-screen  opacity-70" id='main_img'></img>
 
 
-          <div className="bg-white py-10">
+          <div className="bg-white py-10 ">
 
             <Machnies />
 
@@ -41,7 +42,7 @@ const navigate = useNavigate()
             <AboutUs/>
           </div>
           
-          <div id='work' className="bg-white py-14 flex justify-center flex-wrap gap-5">
+          <div id='work' className="bg-white py-8 flex justify-center flex-wrap gap-5">
             <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
               <figure className="px-10 pt-10">
                 <img src="career.png" alt="career" className="rounded-xl hover:scale-110 duration-200 " />
@@ -55,8 +56,11 @@ const navigate = useNavigate()
               </div>
             </div>
             <ContactForm />
+            
           </div>
-
+          <div className="py-10 pt-16 bg-zinc-100 flex justify-center flex-wrap">
+            <Map />
+          </div>
 
           <Footer />
 
