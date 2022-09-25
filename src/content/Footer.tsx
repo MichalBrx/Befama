@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from "react-router";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="w-full h-auto bg-black flex-wrap flex gap-8 justify-center py-5 text-white">
         <div id='COMPANY' className="p-3 ">
@@ -19,16 +23,11 @@ const Footer = () => {
             <h1 className="text-center text-2xl font-semibold">KONTAKT</h1>
             <ul className="text-teal-300 text-center text-base">
               <li className='my-2'>tel.: +48 33 8 611 760 <br/>e-mail: info@befama.com.pl</li>  
-              <li className='my-2 underline md:no-underline'><a className="link link-hover">Dział Sprzedaży</a></li>
-              <li className='my-2 underline md:no-underline'><a className="link link-hover">Dział Konstrukcyjny </a></li>
-              <li className='my-2 underline md:no-underline'><a className="link link-hover">Automatyka - Serwis </a></li>
-              <li className='my-2 underline md:no-underline'><a className="link link-hover">Zaopatrzenie - Logistyka </a></li>
+              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover">Dział Sprzedaży</a></li>
+              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover">Dział Konstrukcyjny </a></li>
+              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover">Automatyka - Serwis </a></li>
+              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover">Zaopatrzenie - Logistyka </a></li>
             </ul>
-        </div>
-
-        {/* MA BYC POKAZANE TYKLO NA WIEKSZYM EKRANIE */}
-        <div id="COOP" className="p-2 hidden">
-          <h1 className="text-center font-semibold">Nasze maszyny są skonstrułowane z <br/>części od renomowanych producentów</h1>
         </div>
 
         <div id='COPMANY NIP' className='p-2 max-w-xs'>      

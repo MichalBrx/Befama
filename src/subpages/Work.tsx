@@ -18,7 +18,7 @@ const Work = () => {
           <h3 className="text-xl text-center my-3">Poszukujemy osób do pracy na stanowiskach:</h3>
         </div>
 
-      <div className="flex flex-wrap justify-center ">
+      <div className="flex flex-wrap justify-center mb-10">
 
         <div className="flex justify-center p-5 flex-wrap max-w-sm ">
           <div className="py-2 flex flex-wrap justify-center">
