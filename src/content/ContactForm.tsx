@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
 
+  const { t } = useTranslation()
   const [state, setState] = useState()
 
   function handleChange(e:any){

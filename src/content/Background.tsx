@@ -21,8 +21,8 @@ const Background = () => {
     <div className=" bg-black">
       <div id='home' className="flex justify-center">
             <span className="z-10 absolute  m-20 p-5 lg:m-28">
-              <p className="text-4xl text-white text-center font-bold flex justify-center lg:text-5xl">{t('welcome')}</p>
-              <p className="text-base text-white text-center font-bold flex mt-2 justify-center lg:text-lg">Oferujemy nowe uslugi i czesci do naszych maszyn</p>
+              <p className="text-4xl text-white text-center font-bold flex justify-center lg:text-5xl"> {t('welcome')} </p>
+              <p className="text-base text-white text-center font-bold flex mt-2 justify-center lg:text-lg"> {t('subtitle')} </p>
             </span>
         </div>
 
@@ -53,10 +53,10 @@ const Background = () => {
                 <img src="career.png" alt="career" className="rounded-xl hover:scale-110 duration-200 " />
               </figure>
               <div className="card-body items-center text-center">
-                <h2 className="card-title">Pracuj z Nami</h2>
-                <p>Jeżeli chcesz poszeżać swoją wiedzę i dalej się rozwijać wyślij do nas swoje CV!</p>
+                <h2 className="card-title"> {t('work_w_us')} </h2>
+                <p> {t('if_you')} </p>
                 <div className="card-actions">
-                  <button className="btn btn-primary" onClick={() => navigate("/Work")}>Kogo Szukamy ?</button>
+                  <button className="btn btn-primary" onClick={() => navigate("/Work")}> {t('who_we_need')} </button>
                 </div>
               </div>
             </div>
