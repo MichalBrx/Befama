@@ -30,6 +30,23 @@
     "specialization": "Specjalizacje",
     "offer_head": "Oferta",
     "help": "Pomoc",
-    "guarantee": "Gwarancja"
+    "guarantee": "Gwarancja",
+    "questions": "Masz jakieś pytanie?",
+    "write_us": "Napisz do nas!",
+    "send": "Wyślij",
+    "names": "Imię i Nazwisko",
+    "e-mail": "Twój e-mail",
+    "question_content": "Treść zapytania",
+    "slogan": "Serce technologii",
+    "adress": "ADRES",
+    "CONTACT": "KONTAKT",
+    "law": "Sąd Rejonowy w Bielsku-Białej VIII Wydział Gospodarczy Krajowego Rejestru Sądowego",
+    "street": "ul.",
+    "phone": "tel.:",
+    "dep1": "Dział Sprzedaży",
+    "dep2": "Dział Konstrukcyjny",
+    "dep3": "Automatyka - Serwis",
+    "dep4": "Zaopatrzenie - Logistyka"
+
 
 }
