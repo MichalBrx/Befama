@@ -1,16 +1,21 @@
 import React from 'react'
 import Footer from '../content/Footer'
-import Navbar from '../content/Navbar'
+import SubNavbar from '../content/SubNavbar'
 import ScrollToTop from '../functions/ScrollToTop'
 
+import { useTranslation } from 'react-i18next'
+
 const Department = () => {
+
+    const { t } = useTranslation()
+
   return (
     <div>
         <ScrollToTop />
-        <Navbar />
+        <SubNavbar />
         <div className="mt-24 flex justify-center flex-wrap">
             <div className="flex justify-center text-2xl text-center font-bold my-8 w-full">
-                <h1 className="">Kontakt do poszczególnych działów</h1> 
+                <h1 className="">Kontakt do poszczególnych działów { t('') } </h1> 
             </div>
             <div className="flex flex-wrap justify-center max-w-3xl md:gap-5 mb-10">
                 <div className=" m-5 justify-center text-center">

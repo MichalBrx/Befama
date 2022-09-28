@@ -46,5 +46,14 @@
     "dep1": "Sales Department",
     "dep2": "Designing Department",
     "dep3": "Service Center",
-    "dep4": "Supply - Logistics"
+    "dep4": "Supply - Logistics",
+    "serv_title": "Other services provided by Befama",
+    "serv1": "Rollers and other turned parts",
+    "serv2": "Delivery and assembly of spicked plate and lattice",
+    "serv3": "Delivery and winding of metallic wire",
+    "serv4": "Plastic compoments for machines",
+    "serv5": "Gauges for setting machines",
+    "serv6": "Cast, forged, rolled parts",
+    "serv7": "Control elements, modernization"
+
 }

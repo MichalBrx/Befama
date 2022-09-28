@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../content/Navbar'
+import SubNavbar from '../content/SubNavbar'
 import Footer from '../content/Footer'
 
 import { MdBuild, MdControlCamera, MdOutlineDesignServices, MdOutlineMiscellaneousServices } from "react-icons/md"
@@ -10,7 +10,7 @@ const Work = () => {
     <div>
       <ScrollToTop />
       <div className="h-16 mb-1">
-        <Navbar />
+        <SubNavbar />
       </div>
 
       <div className='pt-5 lg:mt-10'>

@@ -46,5 +46,13 @@
     "dep1": "Handelsabteilung",
     "dep2": "Konstruktionsabteilung",
     "dep3": "Servicecenter",
-    "dep4": "Beschaffung - Logistik"
+    "dep4": "Beschaffung - Logistik",
+    "serv_title": "Andere Dienstleistungen von Befama",
+    "serv1": "Walzen und andere Drehteile",
+    "serv2": "Lieferung und Aufwicklung von Säge- und Elastikpolstern",
+    "serv3": "Lieferung und Montage von Plattenblöcken, Gitter",
+    "serv4": "Kunststoffteile für Maschinen",
+    "serv5": "Messgeräte zum Einstellen von Maschinen",
+    "serv6": "Gegossene, geschmiedete, gewalzte Teile",
+    "serv7": "Bedienelemente, Modernisierung"
 }

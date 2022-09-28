@@ -19,9 +19,7 @@ i18n
     backend: {
         loadPath: '/assets/locales/{{lng}}/translation.json'
     },
-    react: { 
-        useSuspense: false
-    },
+
     
     interpolation: {
       escapeValue: false // react already safes from xss

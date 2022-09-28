@@ -6,6 +6,7 @@ import Footer from './Footer'
 import Services from './Services'
 import AboutUs from './AboutUs'
 import ContactForm from './ContactForm'
+import WorkWithUs from './WorkWithUs';
 import Map from './Map';
 
 import { useTranslation } from 'react-i18next';
@@ -26,21 +27,16 @@ const Background = () => {
             </span>
         </div>
 
-        {/* ZASTANOW SIE NAD SENSEM KODU PONIZEJ (KOLORU BACGROUNDU DA SIE TO ROZWIAZAC W LEPSZY SPOSOB ) */}
+        {/* ZASTANOW SIE NAD SENSEM KODU PONIZEJ (BACGROUNDU )  MOZNA ZAMIENIC ZAMIAST POZYCJI ABSOLUTE UZYC DISPLAY GRID */}
         <section className="absolute bg-black "  id='bg-img'>
           <img src='./main2.jpg' alt='Machine' className="saturate-50 h-screen object-cover w-screen  opacity-70" id='main_img'></img>
-
-
+        
           <div className="bg-white py-10 ">
-
             <Machnies />
-
           </div>
 
           <div className="bg-white border-none">
-
             <Services />
-
           </div>
 
           <div id='aboutUs' className="bg-white border-none flex justify-center w-full">
@@ -48,28 +44,18 @@ const Background = () => {
           </div>
           
           <div id='work' className="bg-white py-8 flex justify-center flex-wrap gap-5">
-            <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
-              <figure className="px-10 pt-10">
-                <img src="career.png" alt="career" className="rounded-xl hover:scale-110 duration-200 " />
-              </figure>
-              <div className="card-body items-center text-center">
-                <h2 className="card-title"> {t('work_w_us')} </h2>
-                <p> {t('if_you')} </p>
-                <div className="card-actions">
-                  <button className="btn btn-primary" onClick={() => navigate("/Work")}> {t('who_we_need')} </button>
-                </div>
-              </div>
-            </div>
-            <ContactForm />
-            
+            <WorkWithUs />
+            <ContactForm />     
           </div>
+
           <div className="py-10 pt-16 bg-zinc-100 flex justify-center flex-wrap">
             <Map />
           </div>
 
           <Footer />
 
-      </section>
+          </section>
+
     </div>
   )
 }

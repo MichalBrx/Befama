@@ -46,7 +46,15 @@
     "dep1": "Dział Sprzedaży",
     "dep2": "Dział Konstrukcyjny",
     "dep3": "Automatyka - Serwis",
-    "dep4": "Zaopatrzenie - Logistyka"
+    "dep4": "Zaopatrzenie - Logistyka",
+    "serv_title": "Inne usługi realizowane przez Befame",
+    "serv1": "Wałki i inne elementy toczone",
+    "serv2": "Dostawa i nawijanie obić piłowych oraz elastycznych",
+    "serv3": "Dostawa i montaż płyt szarpakowych, szczeblaków",
+    "serv4": "Elementy z tworzyw sztucznych do maszyn",
+    "serv5": "Szczelinomierze do ustawiania maszyn",
+    "serv6": "Części odlewane, kute, walcowane",
+    "serv7": "Elementy sterowania, modernizacja"
 
 
 }
