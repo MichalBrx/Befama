@@ -17,7 +17,7 @@ const WorkWithUs = () => {
       <h2 className="card-title"> {t('work_w_us')} </h2>
       <p> {t('if_you')} </p>
       <div className="card-actions">
-        <button className="btn btn-primary" onClick={() => navigate("/Work")}> {t('who_we_need')} </button>
+        <button className="btn btn-primary" onClick={() => navigate("/work")}> {t('who_we_need')} </button>
       </div>
     </div>
   </div>

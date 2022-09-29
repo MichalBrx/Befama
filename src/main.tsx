@@ -21,9 +21,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Suspense fallback={loadingMarkup}>
       <Routes >
         <Route path='/' element={<App />} />
-        <Route path="Work" element={<Work />} />
-        <Route path="Services" element={<Serv />} />
-        <Route path="Department" element={<Department />} />
+        <Route path="work" element={<Work />} />
+        <Route path="services" element={<Serv />} />
+        <Route path="department" element={<Department />} />
       </Routes>
     </Suspense>
   </BrowserRouter>

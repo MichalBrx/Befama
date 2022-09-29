@@ -1,13 +1,14 @@
 import React from 'react'
-
+import SubNavbar from '../content/SubNavbar'
 const ThatMachine = () => {
 
-    const data = [
-        {}, {}, {}, {}
-    ]
+
 
   return (
-    <div>ThatMachine</div>
+    <div>
+      <SubNavbar />
+      
+    </div>
   )
 }
 

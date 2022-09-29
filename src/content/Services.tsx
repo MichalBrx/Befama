@@ -53,7 +53,7 @@ const Services = () => {
               <p className="w-4/5 text-left pl-5"> {t("offer9")} </p>
             </div>
             <div className="w-full mt-5">
-              <button className='btn btn-primary mt-3' onClick={() => navigate("/Services")}> {t("learn_more")} </button>
+              <button className='btn btn-primary mt-3' onClick={() => navigate("/services")}> {t("learn_more")} </button>
             </div>
 
         </div>

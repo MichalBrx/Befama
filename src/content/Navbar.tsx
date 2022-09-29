@@ -67,13 +67,13 @@ const Navbar = () => {
         <div className="flex sm:gap-5 gap-1 mx-2 md:mx-5 lg:mx-20">
 
           <div className="w-14 h-full sm:w-16 lg:w-20">
-            <img  src='./Befama.jpeg' alt='Logo Befama' className="rounded-full w-14 h-14 m-1 sm:w-16 sm:h-16 lg:w-full lg:h-full"></img>
+            <img  src='./Befama.jpeg' alt='Logo Befama' className="rounded-full w-12 h-12 m-1 sm:w-16 sm:h-16"></img>
           </div>
 
             <div className="flex items-center font-medium text-black sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
 
               <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3"><a href='#home' onClick={(e) => handleClick(e)}>Home</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3"><a onClick={() => navigate("/Department")}> {t('contact')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3"><a onClick={() => navigate("/department")}> {t('contact')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden sm:block"><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#work" onClick={(e) => handleClick(e)}> {t('career')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#Machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 

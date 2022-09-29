@@ -21,15 +21,14 @@ const Background = () => {
   return (
     <div className=" bg-black">
       <div id='home' className="flex justify-center">
-            <span className="z-10 absolute  m-20 p-5 lg:m-28">
-              <p className="text-4xl text-white text-center font-bold flex justify-center lg:text-5xl"> {t('welcome')} </p>
-              <p className="text-base text-white text-center font-bold flex mt-2 justify-center lg:text-lg"> {t('subtitle')} </p>
+            <span className="z-10 absolute pt-16 m-20 p-5 lg:m-28">
+              <p className="text-4xl sm:text-5xl md:text-6xl text-white text-center font-bold  justify-center"> {t('welcome')} </p>
+              <p className="text-lg sm:text-xl md:text-2xl text-white text-center font-bold flex mt-2 justify-center"> {t('subtitle')} </p>
             </span>
         </div>
 
-        {/* ZASTANOW SIE NAD SENSEM KODU PONIZEJ (BACGROUNDU )  MOZNA ZAMIENIC ZAMIAST POZYCJI ABSOLUTE UZYC DISPLAY GRID */}
         <section className="absolute bg-black "  id='bg-img'>
-          <img src='./main2.jpg' alt='Machine' className="saturate-50 h-screen object-cover w-screen  opacity-70" id='main_img'></img>
+          <img src='./main.jpg' alt='Machine' className="saturate-50 h-screen object-cover w-screen  opacity-70" id='main_img'></img>
         
           <div className="bg-white py-10 ">
             <Machnies />
