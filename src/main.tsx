@@ -1,9 +1,12 @@
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Work from './subpages/Work'
-import Serv from './subpages/Serv'
-import Department from './subpages/Department'
+import Work from './subpages/Work';
+
+import Department from './subpages/Department';
+import Machine from './subpages/Machine';
+import Serv from './subpages/Serv';
+
 
 import App from './App'
 import './index.css'
@@ -24,6 +27,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <Route path="work" element={<Work />} />
         <Route path="services" element={<Serv />} />
         <Route path="department" element={<Department />} />
+
+        <Route path="machine/:name" element={<Machine />}>
+
+        </Route>
+
       </Routes>
     </Suspense>
   </BrowserRouter>

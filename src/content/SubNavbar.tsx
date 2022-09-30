@@ -56,7 +56,7 @@ const Navbar = () => {
         <div className="flex sm:gap-5 gap-1 mx-2 md:mx-5 lg:mx-20">
 
           <div className="w-14 h-full sm:w-16 lg:w-20">
-            <img  src='./Befama.jpeg' alt='Logo Befama' className="rounded-full w-14 h-14 m-1 sm:w-16 sm:h-16 lg:w-full lg:h-full"></img>
+            <img src='.././Befama.jpeg' alt='Logo Befama' className="rounded-full w-14 h-14 m-1 sm:w-16 sm:h-16 lg:w-full lg:h-full"></img>
           </div>
 
             <div className="flex items-center font-medium text-black sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
