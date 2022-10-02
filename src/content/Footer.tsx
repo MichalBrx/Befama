@@ -25,10 +25,10 @@ const Footer = () => {
             <h1 className="text-center text-2xl font-semibold"> {t('CONTACT')} </h1>
             <ul className="text-teal-300 text-center text-base">
               <li className='my-2'>{t("phone")} +48 33 8 611 760 <br/>e-mail: info@befama.com.pl</li>  
-              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover"> {t('dep1')} </a></li>
-              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover"> {t('dep2')} </a></li>
-              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover"> {t('dep3')} </a></li>
-              <li className='my-2 underline md:no-underline'><a onClick={() => navigate("/Department")} className="link link-hover"> {t('dep4')} </a></li>
+              <li className='my-2 underline md:no-underline'><a href='departmetnt' onClick={() => navigate("/Department")} className="link link-hover"> {t('dep1')} </a></li>
+              <li className='my-2 underline md:no-underline'><a href='departmetnt' onClick={() => navigate("/Department")} className="link link-hover"> {t('dep2')} </a></li>
+              <li className='my-2 underline md:no-underline'><a href='departmetnt' onClick={() => navigate("/Department")} className="link link-hover"> {t('dep3')} </a></li>
+              <li className='my-2 underline md:no-underline'><a href='departmetnt' onClick={() => navigate("/Department")} className="link link-hover"> {t('dep4')} </a></li>
             </ul>
         </div>
 

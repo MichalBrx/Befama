@@ -10,7 +10,7 @@ const Department = () => {
     const { t } = useTranslation()
 
   return (
-    <div>
+    <div id='department'>
         <ScrollToTop />
         <SubNavbar />
         <div className="mt-24 flex justify-center flex-wrap">

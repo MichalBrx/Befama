@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <Route path="services" element={<Serv />} />
         <Route path="department" element={<Department />} />
 
-        <Route path="machine/:name" element={<Machine />}>
+        <Route path="machine/:name"  element={<Machine />}>
 
         </Route>
 

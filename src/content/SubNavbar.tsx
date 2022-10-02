@@ -82,7 +82,7 @@ const Navbar = () => {
                 <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a href="#aboutUs" onClick={(e) => handleClick(e)}> {t('about_us')} </a></li>
                 <li className="hover:bg-gray-200 duration-200 p-3 rounded md:hidden"><a href="#work" onClick={(e) => handleClick(e)} > {t('career')} </a></li>
                 <li className="hover:bg-gray-200 duration-200 p-3 rounded md:hidden"><a href="#Machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a></li>
-                <li className="hover:bg-gray-200 duration-200 py-3 rounded"><a> {t('prod_line')} </a></li>
+                {/* <li className="hover:bg-gray-200 duration-200 py-3 rounded"><a> {t('prod_line')} </a></li> */}
 
               </ul>
             </div>

@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 import { useTranslation } from 'react-i18next';
 
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, Route, Router } from 'react-router-dom';
 
-
+import Machine from '../subpages/Machine';
 
 
 
@@ -80,13 +80,7 @@ const Machnies = () => {
             {name:"Urządzenia Zwijające", img: "", description:""}
         ]}
 
-
-
     ]
-
-
-
-
 
 
 
@@ -105,10 +99,11 @@ const Machnies = () => {
                                 <button className="btn"> {t('learn_more')} </button>
                                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-white rounded-box w-40 border-t mt-2 ">
                                     {machine.tag?.map((machinery:any, index:React.Key) => (
-                                        <li key={index}><NavLink to={'machine/' + machinery.name} >{machinery.name}</NavLink></li>
+                                        <li key={index}><Link to={{pathname:'/machine/' + machinery.name }}  >{machinery.name}</Link></li>
                                     ))}
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                 ))}
