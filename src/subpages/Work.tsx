@@ -1,4 +1,3 @@
-import React from 'react'
 import SubNavbar from '../content/SubNavbar'
 import Footer from '../content/Footer'
 

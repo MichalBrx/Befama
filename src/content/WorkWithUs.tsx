@@ -11,7 +11,7 @@ const WorkWithUs = () => {
   return (
     <div className="card w-full shadow-xl rounded-lg max-w-md border-t">
     <figure className="px-10 pt-10">
-      <img src="career.png" alt="career" className="rounded-xl hover:scale-110 duration-200 " />
+      <img src="career.webp" alt="career" className="rounded-xl hover:scale-110 duration-200 " />
     </figure>
     <div className="card-body items-center text-center">
       <h2 className="card-title"> {t('work_w_us')} </h2>

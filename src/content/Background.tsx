@@ -1,6 +1,3 @@
-import React from 'react'
-import { useNavigate } from "react-router";
-
 import Machnies from './Machines'
 import Footer from './Footer'
 import Services from './Services'
@@ -14,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 
 const Background = () => {
 
-  const navigate = useNavigate()
+
 
   const { t } = useTranslation()
 
@@ -28,7 +25,7 @@ const Background = () => {
         </div>
 
         <section className="absolute bg-black "  id='bg-img'>
-          <img src='./main.jpg' alt='Machine' className="saturate-50 h-screen object-cover w-screen  opacity-70" id='main_img'></img>
+          <img src='./main.webp' alt='Machine' className="saturate-50 h-screen object-cover w-screen  opacity-70" id='main_img'></img>
         
           <div className="bg-white py-10 ">
             <Machnies />

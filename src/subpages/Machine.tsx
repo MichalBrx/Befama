@@ -1,13 +1,15 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 import Footer from '../content/Footer'
 import SubNavbar from '../content/SubNavbar'
+import ScrollToTop from '../functions/ScrollToTop'
 
 
 
 const Machine = () => {
 
-  
+  const { t } = useTranslation()
   const {name} = useParams()
 
 
@@ -16,48 +18,49 @@ const Machine = () => {
   const machines = [
     // !!!pozmieniac zdjęcia !!!
 
-        {name: "AB6", img: ".././machines/AB6.jpg", description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nemo similique cumque, in quas modi facere expedita, voluptatibus labore sit nihil maxime doloremque obcaecati provident molestias iure dolor sed totam?", type: "Maszyny Rozluźniające"}, 
-        {name: "AB19", img: "", description:""}, 
-        {name: "AB19G", img: "", description:""}, 
+        {name: "AB6", img: ".././machines/AB6.webp", description: t("AB6"), type: "Maszyny Rozluźniające"}, 
+        {name: "AB19", img: "", description: t("AB19"), type: "Maszyny Rozluźniające"}, 
+        {name: "AB19G", img: "", description: t("AB19G"), type: "Maszyny Rozluźniające"}, 
 
-        {name: "OB1", img: "", description:""}, 
-        {name: "OB2", img: "", description:""},
+        {name: "OB1", img: ".././machines/OB1E.webp", description: t("OB1"), type: "Otwieraczki Bel"}, 
+        {name: "OB2", img: "", description: t("OB2"), type: "Otwieraczki Bel"},
 
-        {name: "KMC1500", img: "", description:""}, 
-        {name: "KMC3000", img: "", description:""}, 
-        {name: "MW6", img: "", description:""}, 
+        {name: "KMC1500", img: "", description: t("KMC1500"), type: "Komory Mieszalnicze"}, 
+        {name: "KMC3000", img: "", description: t("KMC3000"), type: "Komory Mieszalnicze"}, 
+        {name: "MW6", img: "", description: t("MW6"), type: "Komory Mieszalnicze"}, 
 
-        {name: "TYP TP", img: "", description:""}, 
-        {name:"TYP TPR", img: "", description:""}, 
-
-
-        {name: "3KA", img: "", description:""}, 
-        {name: "3AGK", img: "", description:""},  
-
-        {name: "TYP CR", img: "", description:""}, 
-        {name: "TYP CS", img: "", description:""},
-
-        {name: "CU611", img: "", description:""}, 
-        {name: "CU641", img: "", description:""}, 
-        {name: "CU661", img: "", description:""},
-        {name: "5W50", img: "", description:""}, 
-        {name: "5WN700", img: "", description:""}, 
-        {name: "SERIA WD", img: "", description:""}, 
-
-        {name: "Szarparki Krajek AC4B", img: "", description:""}, 
-        {name: "Szarparka Odpadów AC5", img: "", description:""},
-        {name: "Agregaty Szarpiące AC40", img: "", description:""},
-        {name: "Krajarki Rotacyjne AC39", img: "", description:""}, 
+        {name: "TYP TP", img: "", description: t("TP"), type: "Transportery Zbiorcze"}, 
+        {name:"TYP TPR", img: "", description: t("TPR"), type: "Transportery Zbiorcze"}, 
 
 
-        {name:"Kondensery Obrotowe, Cyklony, Filtry", img: "", description:""}, 
+        {name: "3KA", img: "", description: t("3KA"), type: "Zgrzeblarki Laboratoryjne i Specjalnego Przeznaczenia"}, 
+        {name: "3AGK", img: "", description: t("3AGK"), type: "Zgrzeblarki Laboratoryjne i Specjalnego Przeznaczenia"},  
 
-        {name:"Instalacje Transportu Pneumatycznego", img: "", description:""},
+        {name: "TYP CR", img: "", description: t("CR"), type: "Zgrzeblarki do produkcji przędzy systemu Zgrzebnego i Czesankowego"}, 
+        {name: "TYP CS", img: "", description: t("CS"), type: "Zgrzeblarki do produkcji przędzy systemu Zgrzebnego i Czesankowego"},
+
+        {name: "CU611", img: "", description: t("CU611"), type: "Zgrzeblarki do Włóknin"}, 
+        {name: "CU641", img: "", description: t("CU641"), type: "Zgrzeblarki do Włóknin"}, 
+        {name: "CU661", img: "", description: t("CU661"), type: "Zgrzeblarki do Włóknin"},
+
+        {name: "5W50", img: "", description: t("5W50"), type: "Układacze poziome serii"}, 
+        {name: "5WN700", img: "", description: t("5WN700"), type: "Układacze poziome serii"}, 
+        {name: "SERIA WD", img: "", description: t("WD"), type: "Rozciągarki serii"}, 
+
+        {name: "Szarparki Krajek AC4B", img: "", description: t("AC4B"), type: "Maszyny do Recyklingu"}, 
+        {name: "Szarparka Odpadów AC5", img: "", description: t("AC5"), type: "Maszyny do Recyklingu"},
+        {name: "Agregaty Szarpiące AC40", img: "", description: t("AC40"), type: "Maszyny do Recyklingu"},
+        {name: "Krajarki Rotacyjne AC39", img: "", description: t("AB39"), type: "Maszyny do Recyklingu"}, 
 
 
-        {name:"Urządzenia do cięcia Wzdłużnego i Poprzecznego", img: "", description:""},
+        {name:"Kondensery Obrotowe, Cyklony, Filtry", img: "", description: t("Filters"), type: "Kondensery Obrotowe, Cyklony, Filtry"}, 
 
-        {name:"Urządzenia Zwijające", img: "", description:""}
+        {name:"Instalacje Transportu Pneumatycznego", img: "", description: t("Transport"), type: "Instalacje Transportu Pneumatycznego"},
+
+
+        {name:"Urządzenia do cięcia Wzdłużnego i Poprzecznego", img: "", description: t("TP"), type: "Urządzenia do cięcia Wzdłużnego i Poprzecznego"},
+
+        {name:"Urządzenia Zwijające", img: "", description: t("Curling"), type: "Urządzenia Zwijające"}
 
 ] 
 
@@ -66,7 +69,7 @@ const Machine = () => {
  
   return (
     <div>
-
+      <ScrollToTop />
       <SubNavbar />
 
       
@@ -74,7 +77,7 @@ const Machine = () => {
         {machines.map((machine) => {
           if (machine.name === name) {
             return(
-              <div key={machine.name} className="mt-32 flex justify-center flex-wrap max-w-xl">
+              <div key={machine.name} className="mt-24 flex justify-center flex-wrap max-w-xl">
               <h1 className="text-center font-impact text-3xl md:text-5xl w-full">{machine.name}</h1>
               <h3 className="text-lg text-gray-500 mt-2">{machine.type}</h3>
     

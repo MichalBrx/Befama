@@ -1,4 +1,3 @@
-import React from 'react'
 import { useNavigate } from "react-router";
 import { MdBuild, MdControlCamera, MdOutlineDesignServices, MdOutlineMiscellaneousServices } from "react-icons/md"
 import { GrMapLocation } from "react-icons/gr"

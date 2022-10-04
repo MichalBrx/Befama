@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import { useNavigate } from "react-router";
 import cookies from "js-cookie"
 
@@ -61,18 +60,18 @@ const Navbar = () => {
 
 
   return (
-    <div>
+    <div className="z-50">
         <div id='NavBar'  className={"shadow-sm shadow-gray-700 z-30 bg-white fixed top-0 w-full sm:h-20 flex items-center duration-200"}>      
 
         <div className="flex sm:gap-5 gap-1 mx-2 md:mx-5 lg:mx-20">
 
           <div className="w-14 h-full sm:w-16 lg:w-20">
-            <img  src='./Befama.jpeg' alt='Logo Befama' className="rounded-full w-12 h-12 m-1 sm:w-16 sm:h-16"></img>
+            <img  src='./logo.webp' alt='Logo Befama' className="rounded-full h-12 m-1 w-auto sm:h-16"></img>
           </div>
 
             <div className="flex items-center font-medium text-black sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
 
-              <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3"><a href='#home' >Home</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3"><a href='#home' onClick={(e) => handleClick(e)} >Home</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3"><a href="department" onClick={() => navigate("/department")}> {t('contact')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden sm:block"><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#work" onClick={(e) => handleClick(e)}> {t('career')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 

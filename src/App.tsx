@@ -7,7 +7,11 @@ import Background from './content/Background'
 import ScrollToTop from './functions/ScrollToTop'
 
 
+
+
 function App() {
+
+
 
 
 
@@ -22,9 +26,9 @@ function App() {
       <Background />
 
   
-      
     </div>
   )
 }
+
 
 export default App
