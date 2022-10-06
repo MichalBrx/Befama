@@ -52,7 +52,7 @@ const Machnies = () => {
         {type: "Rozciągarki serii", src: "./machines/rozciagarki.webp", tag: [
             {name: "SERIA WD"}
         ]}, 
-        {type: "Maszyny do Recyklingu", src: "./machines/recykling.webp", tag: [
+        {type: "Maszyny Do Recyklingu", src: "./machines/Recykling.webp", tag: [
             {name: "Szarparki Krajek AC4B"}, 
             {name: "Szarparka Odpadów AC5"},
             {name: "Agregaty Szarpiące AC40"},
@@ -61,7 +61,7 @@ const Machnies = () => {
         {type: "Kondensery Obrotowe, Cyklony, Filtry", src: "./machines/Worki.webp", tag: [
             {name:"Kondensery Obrotowe, Cyklony, Filtry"}
         ]}, 
-        {type: "Instalacje Transportu Pneumatycznego", src: "./machines/Recykling.webp", tag: [
+        {type: "Instalacje Transportu Pneumatycznego", src: "./machines/recykling.webp", tag: [
             {name:"Instalacje Transportu Pneumatycznego"}
         ]},
         {type: "Transportery Zbiorcze", src: "./machines/Transporter.webp", tag: [
@@ -74,7 +74,6 @@ const Machnies = () => {
         ]}
 
     ]
-
 
 
 
