@@ -61,7 +61,7 @@ const Machnies = () => {
         {type: "Kondensery Obrotowe, Cyklony, Filtry", src: "./machines/Worki.webp", tag: [
             {name:"Kondensery Obrotowe, Cyklony, Filtry"}
         ]}, 
-        {type: "Instalacje Transportu Pneumatycznego", src: "./machines/recykling.webp", tag: [
+        {type: "Instalacje Transportu Pneumatycznego", src: "./machines/Recykling.webp", tag: [
             {name:"Instalacje Transportu Pneumatycznego"}
         ]},
         {type: "Transportery Zbiorcze", src: "./machines/Transporter.webp", tag: [
