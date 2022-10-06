@@ -14,7 +14,7 @@ const Machnies = () => {
 
     const machines = [
         // !!!pozmieniac zdjęcia !!!
-        {type: "Maszyny Rozluźniające", src: "./machines/Rozluzniajacy.webp", tag: [
+        {type: "Maszyny Rozluźniające", src: "./machines/rozluzniajacy.webp", tag: [
             {name: "AB6"}, 
             {name: "AB19"}, 
             {name: "AB19G"}
