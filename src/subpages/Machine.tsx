@@ -52,13 +52,11 @@ const Machine = () => {
         {name: "Agregaty Szarpiące AC40", img: "", description: t("AC40"), type: "Maszyny do Recyklingu"},
         {name: "Krajarki Rotacyjne AC39", img: "", description: t("AB39"), type: "Maszyny do Recyklingu"}, 
 
-
         {name:"Kondensery Obrotowe, Cyklony, Filtry", img: "", description: t("Filters"), type: "Kondensery Obrotowe, Cyklony, Filtry"}, 
 
         {name:"Instalacje Transportu Pneumatycznego", img: "", description: t("Transport"), type: "Instalacje Transportu Pneumatycznego"},
 
-
-        {name:"Urządzenia do cięcia Wzdłużnego i Poprzecznego", img: "", description: t("TP"), type: "Urządzenia do cięcia Wzdłużnego i Poprzecznego"},
+        {name:"Urządzenia do cięcia Wzdłużnego i Poprzecznego", img: "", description: t("Cutter"), type: "Urządzenia do cięcia Wzdłużnego i Poprzecznego"},
 
         {name:"Urządzenia Zwijające", img: "", description: t("Curling"), type: "Urządzenia Zwijające"}
 
@@ -79,7 +77,7 @@ const Machine = () => {
             return(
               <div key={machine.name} className="mt-24 flex justify-center flex-wrap max-w-xl">
               <h1 className="text-center font-impact text-3xl md:text-5xl w-full">{machine.name}</h1>
-              <h3 className="text-lg text-gray-500 mt-2">{machine.type}</h3>
+              <p className="text-lg text-gray-500 mt-2">{machine.type}</p>
     
               <div className="m-2 my-6 md:my-10 max-w-lg" >
                 <img src={machine.img} alt="Clicked Machine" className="rounded-lg" />

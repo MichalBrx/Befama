@@ -7,20 +7,10 @@ import { Link } from 'react-router-dom';
 
 
 
-
-
-
-
-
-
 const Machnies = () => {
 
     const { t } = useTranslation()
 
-
-    window.onscroll = () => {
-
-    }
 
     const machines = [
         // !!!pozmieniac zdjęcia !!!
@@ -87,14 +77,18 @@ const Machnies = () => {
 
 
 
-// ZROBIC ZAMYKANIE LISTY PO UZYCIU SCROLLA
+
     return (
         <div className="h-auto w-full flex flex-wrap justify-center" id='Machines'>
-            <h1 className="md:text-5xl text-3xl text-center font-semibold mb-5 border-t rounded-lg py-5 shadow-xl m-5 w-4/5 p-3"> {t('offer')} </h1>
+            
+            <div className="w-full flex justify-center">
+                <h1 className="md:text-5xl text-3xl text-center font-semibold border-b py-5 my-5 mb-10 rounded-lg w-3/5 sm:w-2/5"> {t('offer')} </h1>
+            </div>
+
             <div className='flex justify-center flex-wrap gap-10 lg:gap-16 lg:gap-x-28 lg:w-4/5 max-w-6xl'>
                 {machines.map((machine: any, index: React.Key) => (
-                    <div key={index} className="card card-compact w-72 bg-white border-t shadow-xl p-2 overflow-visible" >
-                        <figure><img src={machine.src} alt="Machine" className="h-auto w-auto rounded-lg max-h-44"/></figure>
+                    <div key={index} className="card card-compact w-72 bg-white border-t shadow-xl p-3 overflow-visible" >
+                        <figure><img src={machine.src} alt="Machine" className="h-auto w-full rounded-lg max-h-44 "/></figure>
                         <div className="card-body overflow-visible">
                             <h2 className="card-title">{machine.type}</h2>
 

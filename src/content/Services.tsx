@@ -11,7 +11,7 @@ const Services = () => {
   const navigate = useNavigate()
 
   return (
-    <div id='services' className="flex justify-center border mx-1 roudned-lg">
+    <div id='services' className="flex justify-center border-y  roudned-lg bg-zinc-100">
         <div className="p-5 ">
         <h1 className="text-4xl font-bold p-5 text-center mb-2"> {t("offer_title")} </h1>
         <div className="flex gap-2 flex-wrap text-center justify-center">

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import "./index.css"
 
 import Navbar from './content/Navbar'
@@ -10,12 +9,6 @@ import ScrollToTop from './functions/ScrollToTop'
 
 
 function App() {
-
-
-
-
-
-
 
 
   return (

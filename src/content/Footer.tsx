@@ -41,7 +41,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div id='WEB_AUTHOR' className="w-full text-center  text-gray-700">
+        <div id='WEB_AUTHOR' className="w-full text-center  text-gray-600">
         <hr className="border-1 border-white"/>
         <h1 className="p-2 mt-2"> Website created by Michal Haj </h1>
         <p className="font-semibold">Contact: </p>

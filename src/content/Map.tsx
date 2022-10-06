@@ -4,7 +4,6 @@ import React from 'react'
 const Map = () => {
 
 
-
   return (
 
   <div className="w-full max-w-4xl border shadow-xl mx-2">
