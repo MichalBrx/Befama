@@ -1,7 +1,13 @@
 import { useTranslation } from "react-i18next"
 
+
 const Hero = () => {
+
     const { t } = useTranslation()
+
+
+
+
   return (
     <div className="bg-black">
         <div id='home' className="grid justify-center content-center isolate">

@@ -92,7 +92,7 @@ const Machnies = () => {
                             <h2 className="card-title">{machine.type}</h2>
 
                             <div className="dropdown justify-end mt-auto z-20">
-                                <button className="btn"> {t('learn_more')} </button>
+                                <button className="btn hover:scale-110 duration-200"> {t('learn_more')} </button>
                                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-white rounded-box w-40 border-t mt-2 ">
                                     {machine.tag?.map((machinery:any, index:React.Key) => ( 
                                         <li key={index}><Link to={{pathname:'/machine/' + machinery.name }} >{machinery.name}</Link></li>
