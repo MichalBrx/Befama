@@ -5,27 +5,30 @@ import AboutUs from './AboutUs'
 import ContactForm from './ContactForm'
 import WorkWithUs from './WorkWithUs';
 import Map from './Map';
-
-import { useTranslation } from 'react-i18next';
 import Hero from './Hero'
 
+
+import { useInView } from 'react-intersection-observer';
 
 const Background = () => {
 
 
 
-  const { t } = useTranslation()
+  
+  const { ref, inView:myElementIsVisible } = useInView()
 
   return (
     <div >
 
+
         <Hero />
+
  
           <div className=" py-10 ">
             <Machnies />
           </div>
 
-          <div className=" border-none">
+          <div id='servs' className={myElementIsVisible ? "motion-safe:animate-fadeIn" : ""}   ref={ref} >
             <Services />
           </div>
 

@@ -107,11 +107,11 @@ const Navbar = () => {
               </form>
             </div>
 
-            <div className="tooltip tooltip-bottom" data-tip={t("youtube")}>
-              <a href="https://www.youtube.com/user/1851Befama" target="_blank" aria-label='youTube' ><AiOutlineYoutube className="w-8 h-8 hidden lg:block" /></a>
+            <div className="tooltip tooltip-bottom hidden lg:block" data-tip={t("youtube")}>
+              <a href="https://www.youtube.com/user/1851Befama" target="_blank" aria-label='youTube' ><AiOutlineYoutube className="w-8 h-8 " /></a>
             </div>
-            <div className="tooltip tooltip-bottom" data-tip={t("location")}>
-              <a href="https://www.google.com/maps/place/P%C3%B3%C5%82nocna+212,+43-378+Kalna,+Poland/@49.7120509,19.1081515,15.5z/data=!4m5!3m4!1s0x47142728491cc8d5:0xf37a9d1b0ccec16e!8m2!3d49.7129164!4d19.1097307?hl=en" target="_blank"  aria-label='location'><FiMapPin className="w-8 h-8 ml-2 lg:mx-5 hidden md:block"/></a>
+            <div className="tooltip tooltip-bottom hidden md:block" data-tip={t("location")}>
+              <a href="https://www.google.com/maps/place/P%C3%B3%C5%82nocna+212,+43-378+Kalna,+Poland/@49.7120509,19.1081515,15.5z/data=!4m5!3m4!1s0x47142728491cc8d5:0xf37a9d1b0ccec16e!8m2!3d49.7129164!4d19.1097307?hl=en" target="_blank"  aria-label='location'><FiMapPin className="w-8 h-8 ml-2 lg:mx-5 "/></a>
             </div>
 
         </div>

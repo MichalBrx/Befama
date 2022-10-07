@@ -4,6 +4,19 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    animation: {
+      fadeIn: "fadeIn 0.75s ease-in forwards",
+      spin: "spin 1s linear infinite"
+    },
+    keyframes: {
+      fadeIn: {
+        "0%": { opacity: 0 },
+        "100%": { opacity: 1 }
+      }
+    },
+    variants: {
+      animation: ["motion-safe"]
+    },
     fontFamily: {
       'impact': ["Impact"]
     },

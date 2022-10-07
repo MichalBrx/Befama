@@ -20,7 +20,7 @@ const loadingMarkup = (
       <h3 className='z-20 font-medium w-full text-3xl '>Loading..</h3>
 
       <svg 
-        className='animate-spin'
+        className="motion-safe:animate-spin"
         fill="none" 
         height="48" 
         viewBox="0 0 48 48" 
