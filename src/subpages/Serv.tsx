@@ -19,7 +19,7 @@ const { t } = useTranslation()
         </div>
         <div className='flex justify-center m-1 lg:mt-10'>
             <div className="flex flex-wrap max-w-lg justify-center my-8">
-                <h3 className="text-3xl font-semibold text-center"> {t("serv_title")} </h3>
+                <h3 className="text-3xl font-semibold text-center items-center "> {t("serv_title")} </h3>
                 <div className="">
   
 

@@ -49,7 +49,7 @@ const AboutUs = () => {
         <div id='desktop' className="hidden md:block ">
 
             <div className="mt-5 ">
-                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 py-3">
+                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 py-3 hover:scale-110 duration-200">
                     <figure><img className="rounded-lg m-2 ml-5 self-center h-64 w-96" src="../machines/OB1E.webp" alt="OB1E"/></figure>
                     <div className="card-body w-80 self-center">
                         <h2 className="card-title"> {t('about_us')}  </h2>
@@ -58,7 +58,7 @@ const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:ml-96 pr-5">
+                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:ml-96 pr-5 hover:scale-110 duration-200">
                     <div className="card-body w-80 self-center">
                         <h2 className="card-title"> {t('specialization')} </h2>
                         <p className='h-auto'>
@@ -67,7 +67,7 @@ const AboutUs = () => {
                     </div>
                     <figure><img className="rounded-lg   self-center h-auto w-96" src="../machines/AB6.webp" alt="AB6"/></figure>
                 </div>
-                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 items-center">
+                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 items-center hover:scale-110 duration-200">
                     <figure><img className="rounded-lg m-2 ml-5 self-center h-64 w-96" src="../machines/teeth.webp" alt="Teeth Machine"/></figure>
                     <div className="card-body w-80 self-center">
                         <h2 className="card-title"> {t('offer_head')} </h2>
@@ -76,7 +76,7 @@ const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card card-side bg-white shadow-xl p-3 flex border-t my-5 lg:ml-96">
+                <div className="card card-side bg-white shadow-xl p-3 flex border-t my-5 lg:ml-96 hover:scale-110 duration-200">
                     <div className="card-body w-80 self-center">
                         <h2 className="card-title"> {t('help')} </h2>
                         <p className='h-auto'>
@@ -85,7 +85,7 @@ const AboutUs = () => {
                     </div>
                     <figure><img className="rounded-lg m-2 ml-5 self-center h-64 w-96" src="../machines/ukladacz.webp" alt="Machine"/></figure>
                 </div>
-                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 items-center py-2">
+                <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 items-center py-2 hover:scale-110 duration-200">
                     <figure><img className="rounded-lg m-2 ml-5 self-center h-auto w-96" src="../machines/AB6-2.webp" alt="AB-6"/></figure>
                     <div className="card-body w-80 self-center">
                         <h2 className="card-title"> {t('guarantee')} </h2>
