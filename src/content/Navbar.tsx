@@ -71,12 +71,12 @@ const Navbar = () => {
 
             <div className="flex items-center font-medium text-black sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
 
-              <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3"><a href='#home' onClick={(e) => handleClick(e)} >Home</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3"><a href="#home" onClick={(e) => handleClick(e)} >Home</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 w-20 text-center"><a href="#aboutUs" onClick={(e) => handleClick(e)} > {t('about_us')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#Machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden sm:block"><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
               <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#work" onClick={(e) => handleClick(e)}> {t('career')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden lg:block"><a href="department" onClick={() => navigate("/department")}> {t('contact')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden lg:block"><button onClick={() => navigate("/department")}> {t('contact')} </button><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
 
             </div>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
                 <li className="hover:bg-gray-200 duration-200 py-3 rounded"><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a></li>
                 <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a href="#work" onClick={(e) => handleClick(e)} > {t('career')} </a></li>
                 <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a href="#Machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a></li>
-                <li className="hover:bg-gray-200 duration-200 p-3 rounded "><a href="#department" onClick={() => navigate("/Department")} > {t('contact')} </a></li>
+                <li className="hover:bg-gray-200 duration-200 p-3 rounded "><button  onClick={() => navigate("/Department")} > {t('contact')} </button></li>
               </ul>
             </div>
 
@@ -111,8 +111,8 @@ const Navbar = () => {
             <div className="tooltip tooltip-bottom hidden lg:block" data-tip={t("youtube")}>
               <a href="https://www.youtube.com/user/1851Befama" target="_blank" aria-label='youTube' ><AiOutlineYoutube className="w-8 h-8 " /></a>
             </div>
-            <div className="tooltip tooltip-bottom hidden md:block" data-tip={t("location")}>
-              <a href="https://www.google.com/maps/place/P%C3%B3%C5%82nocna+212,+43-378+Kalna,+Poland/@49.7120509,19.1081515,15.5z/data=!4m5!3m4!1s0x47142728491cc8d5:0xf37a9d1b0ccec16e!8m2!3d49.7129164!4d19.1097307?hl=en" target="_blank"  aria-label='location'><FiMapPin className="w-8 h-8 ml-2 lg:mx-5 "/></a>
+            <div className="tooltip tooltip-bottom hidden md:block ml-2 lg:mx-5" data-tip={t("location")}>
+              <a href="https://www.google.com/maps/place/P%C3%B3%C5%82nocna+212,+43-378+Kalna,+Poland/@49.7120509,19.1081515,15.5z/data=!4m5!3m4!1s0x47142728491cc8d5:0xf37a9d1b0ccec16e!8m2!3d49.7129164!4d19.1097307?hl=en" target="_blank"  aria-label='location'><FiMapPin className="w-8 h-8  "/></a>
             </div>
 
         </div>

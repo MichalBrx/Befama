@@ -47,7 +47,7 @@ const Footer = () => {
         <p className="font-semibold">Contact: </p>
         <ul>
           <li>tel.: 48 537 886 057</li>
-          <li>e-mail: michalhaj2003@gmail.com</li>
+          <li>e-mail: michal.haj.business@gmail.com</li>
         </ul>
         </div>
     </div>
