@@ -1,0 +1,12 @@
+{
+    "name": "Befama Sp.z.o.o",
+    "short_name": "Befama",
+    "icons": [
+      {
+        "src": "./logo.webp",
+        "sizes": "",
+        "type": "image/webp"
+      }
+    ],
+    "start_url": "/"
+  }
