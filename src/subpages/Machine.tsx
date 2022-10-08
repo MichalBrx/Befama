@@ -18,47 +18,47 @@ const Machine = () => {
   const machines = [
     // !!!pozmieniac zdjęcia !!!
 
-        {name: "AB6", img: ".././machines/AB6.webp", description: t("AB6"), type: "Maszyny Rozluźniające"}, 
-        {name: "AB19", img: "", description: t("AB19"), type: "Maszyny Rozluźniające"}, 
-        {name: "AB19G", img: "", description: t("AB19G"), type: "Maszyny Rozluźniające"}, 
+        {name: "AB6", img: ".././machines/AB6.webp", description: t("AB6"), type: "Maszyny rozluźniające"}, 
+        {name: "AB19", img: "", description: t("AB19"), type: "Maszyny rozluźniające"}, 
+        {name: "AB19G", img: "", description: t("AB19G"), type: "Maszyny rozluźniające"}, 
 
-        {name: "OB1", img: ".././machines/OB1E.webp", description: t("OB1"), type: "Otwieraczki Bel"}, 
-        {name: "OB2", img: "", description: t("OB2"), type: "Otwieraczki Bel"},
+        {name: "OB1", img: ".././machines/OB1E.webp", description: t("OB1"), type: "Otwieraczki bel"}, 
+        {name: "OB2", img: "", description: t("OB2"), type: "Otwieraczki bel"},
 
-        {name: "KMC1500", img: "", description: t("KMC1500"), type: "Komory Mieszalnicze"}, 
-        {name: "KMC3000", img: "", description: t("KMC3000"), type: "Komory Mieszalnicze"}, 
-        {name: "MW6", img: "", description: t("MW6"), type: "Komory Mieszalnicze"}, 
+        {name: "KMC1500", img: "", description: t("KMC1500"), type: "Komory mieszalnicze"}, 
+        {name: "KMC3000", img: "", description: t("KMC3000"), type: "Komory mieszalnicze"}, 
+        {name: "MW6", img: "", description: t("MW6"), type: "Komory mieszalnicze"}, 
 
-        {name: "TYP TP", img: "", description: t("TP"), type: "Transportery Zbiorcze"}, 
-        {name:"TYP TPR", img: "", description: t("TPR"), type: "Transportery Zbiorcze"}, 
+        {name: "TYP TP", img: "", description: t("TP"), type: "Transportery zbiorcze"}, 
+        {name:"TYP TPR", img: "", description: t("TPR"), type: "Transportery zbiorcze"}, 
 
 
-        {name: "3KA", img: "", description: t("3KA"), type: "Zgrzeblarki Laboratoryjne i Specjalnego Przeznaczenia"}, 
-        {name: "3AGK", img: "", description: t("3AGK"), type: "Zgrzeblarki Laboratoryjne i Specjalnego Przeznaczenia"},  
+        {name: "3KA", img: "", description: t("3KA"), type: "Zgrzeblarki laboratoryjne i specjalnego przeznaczenia"}, 
+        {name: "3AGK", img: "", description: t("3AGK"), type: "Zgrzeblarki laboratoryjne i specjalnego przeznaczenia"},  
 
-        {name: "TYP CR", img: "", description: t("CR"), type: "Zgrzeblarki do produkcji przędzy systemu Zgrzebnego i Czesankowego"}, 
-        {name: "TYP CS", img: "", description: t("CS"), type: "Zgrzeblarki do produkcji przędzy systemu Zgrzebnego i Czesankowego"},
+        {name: "TYP CR", img: "", description: t("CR"), type: "Zgrzeblarki do produkcji przędzy systemu zgrzebnego i czesankowego"}, 
+        {name: "TYP CS", img: "", description: t("CS"), type: "Zgrzeblarki do produkcji przędzy systemu zgrzebnego i czesankowego"},
 
-        {name: "CU611", img: "", description: t("CU611"), type: "Zgrzeblarki do Włóknin"}, 
-        {name: "CU641", img: "", description: t("CU641"), type: "Zgrzeblarki do Włóknin"}, 
-        {name: "CU661", img: "", description: t("CU661"), type: "Zgrzeblarki do Włóknin"},
+        {name: "CU611", img: "", description: t("CU611"), type: "Zgrzeblarki do włóknin"}, 
+        {name: "CU641", img: "", description: t("CU641"), type: "Zgrzeblarki do włóknin"}, 
+        {name: "CU661", img: "", description: t("CU661"), type: "Zgrzeblarki do włóknin"},
 
         {name: "5W50", img: "", description: t("5W50"), type: "Układacze poziome serii"}, 
         {name: "5WN700", img: "", description: t("5WN700"), type: "Układacze poziome serii"}, 
-        {name: "SERIA WD", img: "", description: t("WD"), type: "Rozciągarki serii"}, 
+        {name: "Seria WD", img: "", description: t("WD"), type: "Rozciągarki serii"}, 
 
-        {name: "Szarparki Krajek AC4B", img: "", description: t("AC4B"), type: "Maszyny do Recyklingu"}, 
-        {name: "Szarparka Odpadów AC5", img: "", description: t("AC5"), type: "Maszyny do Recyklingu"},
-        {name: "Agregaty Szarpiące AC40", img: "", description: t("AC40"), type: "Maszyny do Recyklingu"},
-        {name: "Krajarki Rotacyjne AC39", img: "", description: t("AB39"), type: "Maszyny do Recyklingu"}, 
+        {name: "Szarparki krajek AC4B", img: "", description: t("AC4B"), type: "Maszyny do recyklingu"}, 
+        {name: "Szarparka odpadów AC5", img: "", description: t("AC5"), type: "Maszyny do recyklingu"},
+        {name: "Agregaty szarpiące AC40", img: "", description: t("AC40"), type: "Maszyny do recyklingu"},
+        {name: "Krajarki rotacyjne AC39", img: "", description: t("AB39"), type: "Maszyny do recyklingu"}, 
 
-        {name:"Kondensery Obrotowe, Cyklony, Filtry", img: "", description: t("Filters"), type: "Kondensery Obrotowe, Cyklony, Filtry"}, 
+        {name:"Kondensery obrotowe, cyklony, filtry", img: "", description: t("Filters"), type: "Kondensery obrotowe, cyklony, filtry"}, 
 
-        {name:"Instalacje Transportu Pneumatycznego", img: "", description: t("Transport"), type: "Instalacje Transportu Pneumatycznego"},
+        {name:"Instalacje transportu pneumatycznego", img: "", description: t("Transport"), type: "Instalacje transportu pneumatycznego"},
 
-        {name:"Urządzenia do cięcia Wzdłużnego i Poprzecznego", img: "", description: t("Cutter"), type: "Urządzenia do cięcia Wzdłużnego i Poprzecznego"},
+        {name:"Urządzenia do cięcia wzdłużnego i poprzecznego", img: "", description: t("Cutter"), type: "Urządzenia do cięcia wzdłużnego i poprzecznego"},
 
-        {name:"Urządzenia Zwijające", img: "", description: t("Curling"), type: "Urządzenia Zwijające"}
+        {name:"Urządzenia zwijające", img: "", description: t("Curling"), type: "Urządzenia zwijające"}
 
 ] 
 

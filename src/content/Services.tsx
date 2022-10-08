@@ -33,7 +33,7 @@ const Services = () => {
             </div>
             <div className="flex justify-center p-3">
              <MdOutlineDesignServices className="w-8 h-8 self-center"/>
-              <p className="w-4/5 text-left pl-5"> {t("offer5")} </p>
+              <p className="w-4/5 text-left pl-5 "> {t("offer5")} </p>
             </div>
             <div className="flex justify-center p-3">
              <FaDropbox className="w-8 h-8 self-center"/>

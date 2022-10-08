@@ -62,11 +62,11 @@ const Navbar = () => {
             <div className="flex items-center font-medium text-black sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
 
               <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3"><a href='#home' onClick={(e) => handleClick(e)}>Home</a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3"><a href="department" onClick={() => navigate("/Department")}> {t('contact')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden sm:block"><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#work" onClick={(e) => handleClick(e)}> {t('career')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block"><a href="#Machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
-              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden lg:block w-20 text-center"><a href="#aboutUs" onClick={(e) => handleClick(e)} > {t('about_us')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3  w-20 text-center"><a href="#aboutUs" onClick={(e) => handleClick(e)} > {t('about_us')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden sm:block" ><a href="#machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block" ><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block" ><a href="#work" onClick={(e) => handleClick(e)}> {t('career')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
+              <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden lg:block" ><a href="department" onClick={() => navigate("/Department")}> {t('contact')} </a><span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span></div> 
 
             </div>
 
@@ -75,13 +75,14 @@ const Navbar = () => {
         <div className="flex justify-end h-full w-full mx-5 items-center md:mx-5 lg:mx-20">
 
 
-            <div className="dropdown dropdown-hover mr-2 sm:mx-2 lg:hidden" id="dropdown Menu"> 
+            <div className="dropdown dropdown-hover mr-4 sm:mx-2 lg:hidden" id="dropdown Menu"> 
               <label className="sm:ml-10"><MenuOutlined  style={{fontSize:"1.5rem", cursor:'pointer'}}/></label> 
               <ul className="dropdown-content p-2 rounded -left-10 sm:-left-0 mt-1 w-28 bg-white text-center shadow-xl border-t">
-                <li className="hover:bg-gray-200 duration-200 py-3 rounded hidden sm:hidden"><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a></li>
-                <li className="hover:bg-gray-200 duration-200 p-3 rounded"><a href="#aboutUs" onClick={(e) => handleClick(e)}> {t('about_us')} </a></li>
-                <li className="hover:bg-gray-200 duration-200 p-3 rounded md:hidden"><a href="#work" onClick={(e) => handleClick(e)} > {t('career')} </a></li>
-                <li className="hover:bg-gray-200 duration-200 p-3 rounded md:hidden"><a href="#Machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a></li>
+                <li className="hover:bg-gray-200 duration-200 p-3 rounded "><a href="#aboutUs" onClick={(e) => handleClick(e)}> {t('about_us')} </a></li>
+                <li className="hover:bg-gray-200 duration-200 p-3 rounded "><a href="#machines" onClick={(e) => handleClick(e)}> {t('machnies')} </a></li>
+                <li className="hover:bg-gray-200 duration-200 py-3 rounded "><a href="#services" onClick={(e) => handleClick(e)}> {t('services')} </a></li>
+                <li className="hover:bg-gray-200 duration-200 p-3 rounded "><a href="#work" onClick={(e) => handleClick(e)} > {t('career')} </a></li>
+                <li className="hover:bg-gray-200 duration-200 p-3 rounded "><a href="#department" onClick={() => navigate("/Department")} > {t('contact')} </a></li>
               </ul>
             </div>
 
