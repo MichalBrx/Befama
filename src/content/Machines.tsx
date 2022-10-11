@@ -14,67 +14,57 @@ const Machnies = () => {
 
     const machines = [
         // !!!pozmieniac zdjęcia !!!
-        {type: "Maszyny rozluźniające", src: "./machines/rozluzniajacy.webp", tag: [
+        {type: t("opening") , src: "./machines/rozluzniajacy.webp", tag: [
             {name: "AB6"}, 
             {name: "AB19"}, 
             {name: "AB19G"}
         ]}, 
-        {type: "Otwieraczki bel", src: "./machines/Bel.webp", tag: [
+        {type: t("bale") , src: "./machines/Bel.webp", tag: [
             {name: "OB1"}, 
             {name: "OB2"}
         ]}, 
-        {type: "Komory mieszalnicze", src: "./machines/Mieszalnicza.webp", tag: [
+        {type: t("mixing") , src: "./machines/Mieszalnicza.webp", tag: [
             {name: "KMC1500"}, 
             {name: "KMC3000"}, 
             {name: "MW6"}
         ]},
-        {type: "Urządzenia do cięcia wzdłużnego i poprzecznego","src": "./machines/Specjalne.webp", tag: [
-            {name:"Urządzenia do cięcia wzdłużnego i poprzecznego"}
-        ]}, 
-
-        {type: "Zgrzeblarki laboratoryjne i specjalnego przeznaczenia",src: "./machines/ZespDoWloknin.webp", tag: [
+        {type: t("lab") , src: "./machines/ZespDoWloknin.webp", tag: [
             {name: "3KA"}, 
             {name: "3AGK"}
         ]},  
-        {type: "Zgrzeblarki do produkcji przędzy systemu zgrzebnego i czesankowego",src: "./machines/ZespDoWloknin.webp", tag: [
+        {type: t("carding") , src: "./machines/ZespDoWloknin.webp", tag: [
             {name: "TYP CR"}, 
             {name: "TYP CS"}
         ]},
-        {type: "Zgrzeblarki do Włóknin", src: "./machines/ZespDoWloknin.webp", tag: [
+        {type: t("nonwoven") , src: "./machines/ZespDoWloknin.webp", tag: [
             {name: "CU611"}, 
             {name: "CU641"}, 
             {name: "CU661"}
         ]},
-        {type: "Układacze poziome serii", src: "./machines/Runo.webp", tag: [
+        {type: t("webdrafters"), src: "./machines/Runo.webp", tag: [
             {name: "5W50"}, 
             {name: "5WN700"}
         ]}, 
-        {type: "Rozciągarki serii", src: "./machines/rozciagarki.webp", tag: [
+        {type: t("crosslappers"), src: "./machines/rozciagarki.webp", tag: [
             {name: "Seria WD"}
         ]}, 
-        {type: "Maszyny do recyklingu", src: "./machines/Recykling.webp", tag: [
+        {type: t("recovery"), src: "./machines/Recykling.webp", tag: [
             {name: "Szarparki krajek AC4B"}, 
             {name: "Szarparka rdpadów AC5"},
             {name: "Agregaty rzarpiące AC40"},
             {name: "Krajarki rotacyjne AC39"}
         ]}, 
-        {type: "Kondensery obrotowe, cyklony, filtry", src: "./machines/Worki.webp", tag: [
+        {type: t("filters"), src: "./machines/Worki.webp", tag: [
             {name:"Kondensery obrotowe, cyklony, filtry"}
         ]}, 
-        {type: "Instalacje transportu pneumatycznego", src: "./machines/Recykling.webp", tag: [
+        {type: t("pneumatic"), src: "./machines/Recykling.webp", tag: [
             {name:"Instalacje transportu pneumatycznego"}
         ]},
-        {type: "Transportery zbiorcze", src: "./machines/Transporter.webp", tag: [
+        {type: t("transport"), src: "./machines/Transporter.webp", tag: [
             {name: "TYP TP"}, 
             {name:"TYP TPR"}
-        ]}, 
- 
-        {type: "Urządzenia zwijające", src: "./machines/Worki.webp", tag: [
-            {name:"Urządzenia zwijające"}
         ]}
-
     ]
-
 
 
     return (

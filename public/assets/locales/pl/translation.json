@@ -60,6 +60,20 @@
     "languages": "Wybierz język",
     "youtube": "Befama YouTube",
     "location": "Lokalizacja Befamy",
+
+    "bale": "Otwieracze bel",
+    "transport": "Transportery zbiorcze",
+    "opening": "Maszyny rozluźniające",
+    "mixing": "Komory mieszalnicze",
+    "nonwoven": "Zgrzeblarki do produkcji włóknin",
+    "carding": "Zgrzeblarki do produkcji przędzy",
+    "lab": "Zgrzeblarki laboratoryjne i specjalnego przeznaczenia",
+    "crosslappers": "Układacze poziome",
+    "webdrafters": "Rozciągarki runa",
+    "recovery": "Maszyny do recyklingu",
+    "filters": "Kondensery obrotowe, cyklony, filtry",
+    "pneumatic": "Instalacje transportu pneumatycznego",
+
     "AB6": "Wilk zgrzeblący AB6 przeznaczony jest głównie do przygotowania surowca włókienniczego przed procesem zgrzeblenia. Może on stanowić element w linii rozluźniająco-mieszającej jak również być używany jako samodzielna maszyna wstępnego rozwłókniania. Rodzaje: AB6 - wilk stacjonarny AB6A - wilk obrotowy   Parametry: szerokość robocza [mm] - 1000",
     "AB19": "",
     "AB19G": "",
@@ -83,10 +97,8 @@
     "AC5": "",
     "AC40": "",
     "AC39": "",
-    "Filters": "",
-    "Transport": "",
     "TP": "",
     "TPR": "",
-    "Curling": ""
+    "curling": ""
 
 }
