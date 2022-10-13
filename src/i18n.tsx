@@ -12,8 +12,9 @@ i18n
   .init({
     supportedLngs: ['pl', 'en', 'de', 'rus'],
     fallbackLng: "pl",
+    debug: false,
     detection: {
-        order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
+        order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
         caches: ['cookie']
     },
     backend: {

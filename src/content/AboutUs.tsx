@@ -16,7 +16,7 @@ const AboutUs = () => {
                 </p>
             </div>
             <div className='py-2 flex flex-wrap '>
-                <img className="rounded-lg h-44 w-full" src="../machines/ukladacz.webp" alt="Machine-ukladacz" />
+                <img className="rounded-lg h-44 w-full" src="../machines/wloknin.webp" alt="Machine-ukladacz" />
                 <h2 className="font-semibold text-xl p-1 mt-3"> {t('specialization')} </h2>
                 <p className='px-1'>
                     {t('fact2')}
@@ -83,7 +83,7 @@ const AboutUs = () => {
                             {t('fact4')}
                         </p>
                     </div>
-                    <figure><img className="rounded-lg m-2 ml-5 self-center h-64 w-96" src="../machines/ukladacz.webp" alt="Machine"/></figure>
+                    <figure><img className="rounded-lg m-2 ml-5 self-center h-64 w-96" src="../machines/wloknin.webp" alt="Machine"/></figure>
                 </div>
                 <div className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 items-center py-2 hover:scale-110 duration-200">
                     <figure><img className="rounded-lg m-2 ml-5 self-center h-auto w-96" src="../machines/AB6-2.webp" alt="AB-6"/></figure>

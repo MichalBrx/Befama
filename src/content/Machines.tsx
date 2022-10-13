@@ -13,42 +13,47 @@ const Machnies = () => {
 
 
     const machines = [
-        // !!!pozmieniac zdjęcia !!!
-        {type: t("opening") , src: "./machines/rozluzniajacy.webp", tag: [
+
+        {type: t("bale") , src: "./machines/otwieracze.webp", tag: [
+            {name: "OB1"}, 
+            {name: "OB2"}
+        ]},
+        {type: t("transport"), src: "./machines/transporter.webp", tag: [
+            {name: "TYP TP"}, 
+            {name:"TYP TPR"}
+        ]}, 
+        {type: t("opening") , src: "./machines/rozluzniajace.webp", tag: [
             {name: "AB6"}, 
             {name: "AB19"}, 
             {name: "AB19G"}
         ]}, 
-        {type: t("bale") , src: "./machines/Bel.webp", tag: [
-            {name: "OB1"}, 
-            {name: "OB2"}
-        ]}, 
-        {type: t("mixing") , src: "./machines/Mieszalnicza.webp", tag: [
+
+        {type: t("mixing") , src: "./machines/mieszalnicze.webp", tag: [
             {name: "KMC1500"}, 
             {name: "KMC3000"}, 
             {name: "MW6"}
         ]},
-        {type: t("lab") , src: "./machines/ZespDoWloknin.webp", tag: [
-            {name: "3KA"}, 
-            {name: "3AGK"}
-        ]},  
-        {type: t("carding") , src: "./machines/ZespDoWloknin.webp", tag: [
-            {name: "TYP CR"}, 
-            {name: "TYP CS"}
-        ]},
-        {type: t("nonwoven") , src: "./machines/ZespDoWloknin.webp", tag: [
+        {type: t("nonwoven") , src: "./machines/wloknin.webp", tag: [
             {name: "CU611"}, 
             {name: "CU641"}, 
             {name: "CU661"}
         ]},
-        {type: t("webdrafters"), src: "./machines/Runo.webp", tag: [
+        {type: t("carding") , src: "./machines/przedza.webp", tag: [
+            {name: "TYP CR"}, 
+            {name: "TYP CS"}
+        ]},
+        {type: t("lab") , src: "./machines/labolatoryjne.webp", tag: [
+            {name: "3KA"}, 
+            {name: "3AGK"}
+        ]},
+        {type: t("crosslappers"), src: "./machines/ukladacz.webp", tag: [
+        ]},   
+        {type: t("webdrafters"), src: "./machines/runo.webp", tag: [
             {name: "5W50"}, 
-            {name: "5WN700"}
-        ]}, 
-        {type: t("crosslappers"), src: "./machines/rozciagarki.webp", tag: [
+            {name: "5WN700"},
             {name: "Seria WD"}
         ]}, 
-        {type: t("recovery"), src: "./machines/Recykling.webp", tag: [
+        {type: t("recovery"), src: "./machines/recykling.webp", tag: [
             {name: "Szarparki krajek AC4B"}, 
             {name: "Szarparka rdpadów AC5"},
             {name: "Agregaty rzarpiące AC40"},
@@ -60,10 +65,7 @@ const Machnies = () => {
         {type: t("pneumatic"), src: "./machines/Recykling.webp", tag: [
             {name:"Instalacje transportu pneumatycznego"}
         ]},
-        {type: t("transport"), src: "./machines/Transporter.webp", tag: [
-            {name: "TYP TP"}, 
-            {name:"TYP TPR"}
-        ]}
+
     ]
 
 
@@ -81,13 +83,9 @@ const Machnies = () => {
                         <div className="card-body overflow-visible">
                             <h2 className="card-title">{machine.type}</h2>
 
-                            <div className="dropdown justify-end mt-auto z-20">
-                                <button className="btn hover:scale-110 duration-200"> {t('learn_more')} </button>
-                                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-white rounded-box  border-t mt-2 min-w-full w-auto ">
-                                    {machine.tag?.map((machinery:any, index:React.Key) => ( 
-                                        <li key={index}><Link to={{pathname:'/machine/' + machinery.name }} >{machinery.name}</Link></li>
-                                    ))}
-                                </ul>
+                            <div className="justify-end mt-auto z-20">
+
+                                <Link className="btn hover:scale-110 duration-200" to={{pathname:'/machine/' + machine.type }} > {t('learn_more')}</Link>
                             </div>
 
                         </div>
