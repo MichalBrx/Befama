@@ -99,6 +99,10 @@
     "AC39": "",
     "TP": "",
     "TPR": "",
-    "curling": ""
+    "curling": "",
+    "hours": "Godziny otwarcia",
+    "mon-fri": "Pn-Pt ",
+    "sat-sun": "Sb-Nd ",
+    "closed": "nieczynne"
 
 }

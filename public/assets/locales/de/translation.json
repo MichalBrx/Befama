@@ -101,5 +101,9 @@
     "Transport": "",
     "TP": "",
     "TPR": "",
-    "curling": ""
+    "curling": "",
+    "hours": "Die Öffnungszeiten",
+    "mon-fri": "Mo-Fr ",
+    "sat-sun": "Sa-So ",
+    "closed": "geschlossen"
 }

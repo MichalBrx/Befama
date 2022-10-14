@@ -86,7 +86,7 @@ const Machine = () => {
                     <h1 className="w-full justify-center flex my-5 text-5xl font-bold text-center">{machine.type}</h1>
                     <div className="mb-5 flex flex-wrap gap-10 justify-center">
                       {machine.tag.map((model, index:React.Key) => (
-                      <div key={index} className="card card-compact w-auto bg-white shadow-xl sm:m-5 p-2 m-1 border-t max-w-lg sm:p-5 md:hover:scale-125 duration-150">
+                      <div key={index} className="card card-compact w-auto bg-white shadow-xl sm:m-5 p-2 m-1 border-t max-w-lg sm:p-5 md:hover:scale-125 duration-150 sm:my-10">
                       <figure ><img className="rounded-md" src={model.src} alt={machine.type} /></figure>
                       <div className="card-body">
                         <h2 className="card-title w-full justify-center m-1 mt-3 mb-10 text-3xl">{model.name}</h2>

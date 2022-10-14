@@ -101,6 +101,10 @@
     "Transport": "",
     "TP": "",
     "TPR": "",
-    "curling": ""
+    "curling": "",
+    "hours": "Часы работы",
+    "mon-fri": "ПНД-ПТН ",
+    "sat-sun": "СБТ-ВСК ",
+    "closed": "закрытый"
 
 }
