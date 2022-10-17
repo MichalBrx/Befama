@@ -21,7 +21,7 @@ const Work = () => {
 
         <div className="flex justify-center p-5 flex-wrap max-w-sm ">
           <div className="py-2 flex flex-wrap justify-center">
-            <h3 className="flex gap-2 text-xl items-center font-semibold"><MdBuild className="w-6 h-6"/>Konstruktor mechanik</h3>
+            <h3 className="flex gap-2 text-xl  font-semibold"><MdBuild className="w-6 h-6"/>Konstruktor mechanik</h3>
             <p className='pl-8 pt-5 text-lg underline-offset-2 decoration-auto underline'>Osoba zatrudniona na stanowisku odpowiedzialna będzie za:</p>
             <ul className="list-disc pl-12 ">
               <li>projektowanie maszyn</li>
@@ -41,7 +41,7 @@ const Work = () => {
 
         <div className="flex justify-center p-5 flex-wrap max-w-sm ">
           <div className="py-2 flex flex-wrap justify-center">
-            <h3 className="flex gap-2 text-xl items-center font-semibold"><MdControlCamera className="w-6 h-6"/>Monter elektryk</h3>
+            <h3 className="flex gap-2 text-xl  font-semibold"><MdControlCamera className="w-6 h-6"/>Monter elektryk</h3>
             <p className='pl-8 pt-5 text-lg underline-offset-2 decoration-auto underline'>Osoba zatrudniona na stanowisku odpowiedzialna będzie za:</p>
             <ul className="list-disc pl-12 ">
               <li>montaż kabli, rozdzielnic, aparatury elektrycznej</li>
@@ -60,9 +60,9 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="flex justify-center p-5 flex-wrap  max-w-sm">
+        <div className="flex justify-center p-5 flex-wrap max-w-sm">
           <div className="py-2 flex flex-wrap justify-center">
-            <h3 className="flex gap-2 text-xl items-center font-semibold"><MdOutlineMiscellaneousServices className="w-6 h-6"/>Monter mechanik</h3>
+            <h3 className="flex gap-2 text-xl  font-semibold"><MdOutlineMiscellaneousServices className="w-6 h-6"/>Monter mechanik</h3>
             <p className='pl-8 pt-5 text-lg underline-offset-2 decoration-auto underline'>Osoba zatrudniona na stanowisku odpowiedzialna będzie za:</p>
             <ul className="list-disc pl-12 ">
               <li>montaż/demontaż maszyn</li>
@@ -81,11 +81,15 @@ const Work = () => {
             </ul>
           </div>
         </div>
+
+
         
-        <div className="flex justify-center p-5 flex-wrap  max-w-sm">
+        <div className="flex justify-center p-5 flex-wrap max-w-sm items-start">
           <div className="py-2 flex flex-wrap justify-center">
-            <h3 className="flex gap-2 text-xl items-center font-semibold"><MdOutlineDesignServices className="w-6 h-6"/>Na każdym stanowisku oferujemy:</h3>
-            <ul className="list-disc pl-12 my-5">
+            <div className="h-7">
+              <h3 className="flex gap-2 text-xl  font-semibold"><MdOutlineDesignServices className="w-6 h-6"/>Poza tym oferujemy:</h3>
+            </div>
+            <ul className="list-disc pl-12 my-5  ">
               <li>Zatrudnienie na podstawie umowy o pracę lub inną formę zatrudnienia</li>
               <li>Premie miesięczne oraz świąteczne</li>
               <li>Możliwość zdobycia doświadczenia w procesach: tworzenia, produkcji, montażu i serwisowaniu, nowoczesnych maszyn o wysokim stopniu automatyzacji procesów technologicznych</li>
