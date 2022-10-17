@@ -18,7 +18,7 @@ const Machnies = () => {
             {name: "OB1"}, 
             {name: "OB2"}
         ]},
-        {type: t("transport"), src: "./machines/transporter.webp", tag: [
+        {type: t("transport"), src: "./machines/zbiorczy_transport.webp", tag: [
             {name: "TYP TP"}, 
             {name:"TYP TPR"}
         ]}, 
@@ -59,10 +59,10 @@ const Machnies = () => {
             {name: "Agregaty rzarpiące AC40"},
             {name: "Krajarki rotacyjne AC39"}
         ]}, 
-        {type: t("filters"), src: "./machines/Worki.webp", tag: [
+        {type: t("filters"), src: "./machines/kondensery.webp", tag: [
             {name:"Kondensery obrotowe, cyklony, filtry"}
         ]}, 
-        {type: t("pneumatic"), src: "./machines/Recykling.webp", tag: [
+        {type: t("pneumatic"), src: "./machines/transporter.webp", tag: [
             {name:"Instalacje transportu pneumatycznego"}
         ]},
 

@@ -23,7 +23,7 @@ const Department = () => {
             <div className="flex justify-center text-2xl md:text-4xl text-center font-bold my-8 w-full">
                 <h1>{ t('dep_header') }</h1> 
             </div>
-            <div className="flex flex-wrap justify-center max-w-3xl md:gap-5 mb-10">
+            <div className="flex flex-wrap justify-center max-w-5xl lg:gap-8 md:gap-5 mb-10">
                 <div className="card w-80 bg-base-100 shadow-xl my-3 border-t">
                     <div className="card-body">
                         <h2 className="card-title text-2xl">{ t('dep2') }</h2>
@@ -72,53 +72,6 @@ const Department = () => {
                     </div>
                 </div>
 
-                {/* <div className=" m-5 justify-center text-center">
-                    <h2 className="mb-10 text-xl font-semibold">{ t('dep2') }</h2>
-
-                    <h3 className="my-1 text-lg font-semibold">Czesław Krupa</h3>
-                    <h5 className="my-1"><p className="font-semibold">{ t('phone') }</p>+48 605 216 970</h5>
-                    <h5 className="my-1"><p className="font-semibold">e-mail:</p>cz.krupa@befama.com.pl</h5>
-                </div> */}
-
-                {/* <div className=" m-5 justify-center text-center">
-                    <h2 className=" text-xl font-semibold mb-10 ">{ t('dep1') }</h2>
-                    
-                    <h3 className="my-1 text-lg font-semibold">Marek Janoszek</h3>
-                    <h5 className="my-1"><p className="font-semibold">{ t('phone') }</p>+48 514 598 117</h5>
-                    <h5 className="my-1"><p className="font-semibold">e-mail:</p>m.janoszek@befama.com.pl</h5>
-                
-                </div> */}
-                {/* <div className=" m-5 justify-center text-center">
-                    <h2 className=" text-xl font-semibold mb-10 ">{ t('dep1') }</h2>
-                    
-
-                    <h3 className="my-1 text-lg font-semibold">Zbigniew Haj</h3>
-                    <h5 className="my-1"><p className="font-semibold">{ t('phone') }</p>+48 796 150 368</h5>
-                    <h5 className="my-1"><p className="font-semibold">e-mail:</p>z.haj@befama.com.pl</h5>
-                
-                </div> */}
-
-                {/* <div className=" m-5  justify-center text-center">
-                    <h2 className=" text-xl font-semibold mb-10 ">{ t('dep3') }</h2>
-
-                    <h3 className="my-1 text-lg font-semibold">Kamil Żmijowski</h3>
-                    <h5 className="my-1"><p className="font-semibold">{ t('phone') }</p>+48 600 005 479 </h5>
-                    <h5 className="my-1"><p className="font-semibold">e-mail:</p>k.zmijowski@befama.com.pl</h5>
-                </div> */}
-
-                {/* <div className=" m-5  justify-center text-center">
-                    <h2 className=" text-xl font-semibold mb-10 ">{ t('secretariat') }</h2>
-
-                    <h5 className="my-1"><p className="font-semibold">{ t('phone') }</p>+48 33 8 611 760 </h5>
-                    <h5 className="my-1"><p className="font-semibold">e-mail:</p>info@befama.com.pl</h5>
-                </div> */}
-
-                {/* <div className=" m-5  justify-center text-center">
-                    <h2 className=" text-xl font-semibold mb-10 ">{ t('dep4') }</h2>
-
-                    <h5 className="my-1"><p className="font-semibold">e-mail:</p>zakupy@befama.com.pl</h5>
-                </div> */}
-               
             </div>
             <div className="w-full flex justify-center  flex-wrap border-t py-6 md:py-10">
 
@@ -137,7 +90,7 @@ const Department = () => {
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-center gap-10">
-                        <div className="max-w-lg w-full">
+                        <div className="max-w-lg w-full justify-center flex">
                             <Map  />
                         </div>
                         <div className=''>

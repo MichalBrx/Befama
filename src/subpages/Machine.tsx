@@ -15,15 +15,15 @@ const Machine = () => {
 
   const machines = [
     {type: t("bale"), tag: [
-      {name: "OB1", src: ".././machines/OB1E.webp", description: t("OB1")}, 
-      {name: "OB2", src: ".././machines/OB2.webp", description: " "}
+      {name: "OB1", src: ".././types/OB1E.webp", description: t("OB1")}, 
+      {name: "OB2", src: "", description: " "}
   ] },
     {type: t("transport"), tag: [
       {name: "TYP TP", src: "", description: " "}, 
       {name: "TYP TPR", src: "", description: " "}
   ] },
     {type: t("opening"), tag: [
-      {name: "AB6", src: ".././machines/AB6.webp", description: " "}, 
+      {name: "AB6", src: ".././types/AB6.webp", description: " "}, 
       {name: "AB19", src: "", description: " "}, 
       {name: "AB19G", src: "", description: " "}
   ]},
@@ -35,11 +35,11 @@ const Machine = () => {
     {type: t("nonwoven"), tag: [
       {name: "CU611", src: "", description: " "}, 
       {name: "CU641", src: "", description: " "}, 
-      {name: "CU661", src: "", description: " "}
+      {name: "CU661", src: ".././types/CU661.4.webp", description: " "}
   ]},
     {type: t("carding"), tag: [
-      {name: "TYP CR", src: "", description: " "}, 
-      {name: "TYP CS", src: "", description: " "}
+      {name: "TYP CR", src: ".././types/TypCR.webp", description: " "}, 
+      {name: "TYP CS", src: ".././types/TypCS.webp", description: " "}
   ]},
     {type: t("lab"), tag: [
       {name: "3KA", src: "", description: " "}, 
