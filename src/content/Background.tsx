@@ -1,56 +1,48 @@
-import Machnies from './Machines'
-import Footer from './Footer'
-import Services from './Services'
-import AboutUs from './AboutUs'
-import ContactForm from './ContactForm'
-import WorkWithUs from './WorkWithUs';
-import Map from './Map';
-import Hero from './Hero'
+import Machnies from "./Machines";
+import Footer from "./Footer";
+import Services from "./Services";
+import AboutUs from "./AboutUs";
+import ContactForm from "./ContactForm";
+import WorkWithUs from "./WorkWithUs";
+import Map from "./Map";
+import Hero from "./Hero";
 
-
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 
 const Background = () => {
-
-
-
-  
-  const { ref, inView:myElementIsVisible } = useInView()
+  // const { ref, inView:myElementIsVisible } = useInView()
 
   return (
-    <div >
+    <div>
+      <Hero />
 
+      <div className=" py-10 ">
+        <Machnies />
+      </div>
 
-        <Hero />
+      <div id="servs">
+        <Services />
+      </div>
 
- 
-          <div className=" py-10 ">
-            <Machnies />
-          </div>
+      <div id="aboutUs" className=" border-none flex justify-center w-full">
+        <AboutUs />
+      </div>
 
-          <div id='servs' className={myElementIsVisible ? "motion-safe:animate-fadeIn" : ""}   ref={ref} >
-            <Services />
-          </div>
+      <div
+        id="work"
+        className=" py-8 flex justify-center flex-wrap gap-5 bg-zinc-50 "
+      >
+        <WorkWithUs />
+        <ContactForm />
+      </div>
 
-          <div id='aboutUs' className=" border-none flex justify-center w-full">
-            <AboutUs/>
-          </div>
-          
-          <div id='work' className=" py-8 flex justify-center flex-wrap gap-5">
-            <WorkWithUs />
-            <ContactForm />     
-          </div>
+      <div className="py-10 pt-16 bg-zinc-100 flex justify-center flex-wrap">
+        <Map />
+      </div>
 
-          <div className="py-10 pt-16 bg-zinc-100 flex justify-center flex-wrap">
-            <Map />
-          </div>
-
-          <Footer />
-
-          
-
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Background
+export default Background;
