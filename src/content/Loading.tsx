@@ -6,7 +6,7 @@ const Loading = () => {
         <h3 className="z-20 font-medium w-full text-5xl ">Loading..</h3>
 
         <svg
-          className="motion-safe:animate-spin"
+          className="animate-spin"
           fill="none"
           height="48"
           viewBox="0 0 48 48"

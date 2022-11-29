@@ -4,10 +4,19 @@
 
 *{
     margin: 0px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'helvetica', sans-serif;
+    color: #232323;
 }
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+.btn2 span:first-child{
+    transform: translateX(-101%);
+    transition: transform .3s ease-in
+  }
+  .btn2:hover span{
+    transform: translateX(0)
+  }
 

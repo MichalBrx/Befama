@@ -30,7 +30,7 @@ const Background = () => {
 
       <div
         id="work"
-        className=" py-8 flex justify-center flex-wrap gap-5 bg-zinc-50 "
+        className=" py-8 flex justify-center flex-wrap gap-5 bg-wave bg-no-repeat bg-bottom"
       >
         <WorkWithUs />
         <ContactForm />

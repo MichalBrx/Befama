@@ -55,7 +55,7 @@ const Navbar = () => {
       <div
         id="NavBar"
         className={
-          "shadow-sm shadow-gray-700 z-30 bg-white fixed top-0 w-full sm:h-20 flex items-center duration-200"
+          "shadow-gray-700 shadow-inner z-30 bg-white fixed top-0 w-full sm:h-20 flex items-center duration-200"
         }
       >
         <div className="flex sm:gap-5 gap-1 mx-2 md:mx-5 lg:mx-20">
@@ -69,13 +69,27 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="flex items-center font-medium text-black sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
+          <div className="flex items-center font-medium sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
             <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3">
               <a href="#home" onClick={(e) => handleClick(e)}>
                 Home
               </a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span>
             </div>
+            {/* TEST TEST TEST TEST TEST */}
+            <div className="hidden lg:block">
+              <button
+                className="btn2 py-2 relative border-slate-100 w-20 tracking-wider leading-none overflow-hidden rounded-lg active:scale-95 duration-100"
+                type="button"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-sky-600 to-sky-900"></span>
+                <span className="absolute inset-0 flex justify-center items-center duration-200 hover:text-white">
+                  O nas
+                </span>
+                O nas
+              </button>
+            </div>
+
             <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 w-20 text-center">
               <a href="#aboutUs" onClick={(e) => handleClick(e)}>
                 {" "}
@@ -97,7 +111,7 @@ const Navbar = () => {
               </a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span>
             </div>
-            <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden md:block">
+            <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 hidden lg:block">
               <a href="#work" onClick={(e) => handleClick(e)}>
                 {" "}
                 {t("career")}{" "}
@@ -113,37 +127,36 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end h-full w-full mx-5 items-center md:mx-5 lg:mx-20">
+        <div className="flex justify-end h-full w-full  items-center mx-1 sm:mx-5 lg:mx-20">
           <div
-            className="dropdown dropdown-hover mr-4 sm:mx-2 lg:hidden"
+            className="dropdown dropdown-hover mr-4 sm:mx-10 lg:hidden"
             id="dropdown Menu"
           >
             <label className="sm:ml-10">
-              <MenuOutlined style={{ fontSize: "1.5rem", cursor: "pointer" }} />
+              <MenuOutlined
+                style={{
+                  fontSize: "1.5rem",
+                  cursor: "pointer",
+                }}
+              />
             </label>
             <ul className="dropdown-content p-2 rounded -left-10 sm:-left-0 mt-1 w-28 bg-white text-center shadow-xl border-t">
-              <li className="hover:bg-gray-200 duration-200 p-3 rounded">
-                <a href="#aboutUs" onClick={(e) => handleClick(e)}>
-                  {" "}
-                  {t("about_us")}{" "}
-                </a>
-              </li>
-              <li className="hover:bg-gray-200 duration-200 py-3 rounded">
+              <li className="hover:bg-gray-200 duration-200 py-3 rounded sm:hidden">
                 <a href="#services" onClick={(e) => handleClick(e)}>
                   {" "}
                   {t("services")}{" "}
                 </a>
               </li>
-              <li className="hover:bg-gray-200 duration-200 p-3 rounded">
-                <a href="#work" onClick={(e) => handleClick(e)}>
-                  {" "}
-                  {t("career")}{" "}
-                </a>
-              </li>
-              <li className="hover:bg-gray-200 duration-200 p-3 rounded">
+              <li className="hover:bg-gray-200 duration-200 p-3 rounded md:hidden">
                 <a href="#Machines" onClick={(e) => handleClick(e)}>
                   {" "}
                   {t("machnies")}{" "}
+                </a>
+              </li>
+              <li className="hover:bg-gray-200 duration-200 p-3 rounded ">
+                <a href="#work" onClick={(e) => handleClick(e)}>
+                  {" "}
+                  {t("career")}{" "}
                 </a>
               </li>
               <li className="hover:bg-gray-200 duration-200 p-3 rounded ">
@@ -167,7 +180,7 @@ const Navbar = () => {
             <form>
               <ul
                 tabIndex={0}
-                className="dropdown-content menu-normal p-2 shadow bg-white rounded-box w-40  mt-4"
+                className="dropdown-content menu-normal p-2 shadow bg-white rounded-box w-40 mt-4"
               >
                 {languages.map(({ code, name, country_code }) => (
                   <li
@@ -215,6 +228,14 @@ const Navbar = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <a
+          className="btn btn-circle fixed z-50  bottom-20 right-5 motion-safe:animate-bounce"
+          href="#home"
+        >
+          <p className="-rotate-90 text-white text-xl">❯</p>
+        </a>
       </div>
     </div>
   );

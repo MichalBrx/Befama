@@ -90,7 +90,7 @@ const Machnies = () => {
       }}
     >
       <div className="w-full flex justify-center">
-        <h1 className="md:text-4xl text-3xl text-center font-bold border-b py-5 my-5 mb-10 rounded-lg w-3/5 sm:w-2/5">
+        <h1 className="md:text-4xl text-3xl text-center font-bold  py-5 my-5 mb-10 rounded-lg w-3/5 sm:w-2/5">
           {" "}
           {t("offer")}{" "}
         </h1>
@@ -106,7 +106,7 @@ const Machnies = () => {
               <img
                 src={machine.src}
                 alt="Machine"
-                className="h-auto w-full rounded-lg max-h-44 "
+                className="h-auto w-full rounded max-h-44 "
               />
             </figure>
             <div className="card-body overflow-visible">

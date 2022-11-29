@@ -13,14 +13,22 @@ const Machine = () => {
     {
       type: t("bale"),
       tag: [
-        { name: "OB1", src: ".././types/OB1E.webp", description: t("OB1") },
+        {
+          name: "OB1",
+          src: ".././eachmachine/1-1-otwieracze-bel-ob1-ob2.webp",
+          description: t("OB1"),
+        },
         { name: "OB2", src: "", description: " " },
       ],
     },
     {
       type: t("transport"),
       tag: [
-        { name: "TYP TP", src: "", description: " " },
+        {
+          name: "TYP TP",
+          src: ".././eachmachine/2-1-transportery-zbiorcze-tp-tpr.webp",
+          description: " ",
+        },
         { name: "TYP TPR", src: "", description: " " },
       ],
     },
@@ -106,9 +114,9 @@ const Machine = () => {
     <div className="">
       <ScrollToTop />
       <SubNavbar />
-      <div className="">
+      <div className="bg-zinc-50">
         <div className="w-full justify-center flex my-4">
-          <div className="flex justify-center md:my-12 max-w-6xl w-all">
+          <div className="flex justify-center md:my-12 max-w-6xl ">
             {machines.map((machine) => {
               if (machine.type === name) {
                 return (
@@ -120,7 +128,7 @@ const Machine = () => {
                       {machine.tag.map((model, index: React.Key) => (
                         <div
                           key={index}
-                          className="card card-compact w-auto bg-white shadow-xl sm:m-5 p-2 m-1 border-t max-w-lg sm:p-5 md:hover:scale-125 duration-150 sm:my-10"
+                          className="card card-compact w-auto bg-white shadow-xl sm:m-5 p-2 m-1 border-t max-w-lg sm:p-5  duration-150 sm:my-10"
                         >
                           <figure>
                             <img

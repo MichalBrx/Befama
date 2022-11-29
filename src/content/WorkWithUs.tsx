@@ -13,7 +13,7 @@ const WorkWithUs = () => {
 
   return (
     <div
-      className="card w-full shadow-xl rounded-lg max-w-md border-t"
+      className="card w-full shadow-xl rounded-lg max-w-md border-t bg-white"
       ref={ref}
       style={{
         transform: isInView ? "none" : "translateX(-200px)",

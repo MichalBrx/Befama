@@ -48,7 +48,7 @@ const Navbar = () => {
       <div
         id="NavBar"
         className={
-          "shadow-sm shadow-gray-700 z-30 bg-white fixed top-0 w-full sm:h-20 flex items-center duration-200"
+          "shadow-inner shadow-gray-700 z-30 bg-white fixed top-0 w-full sm:h-20 flex items-center duration-200"
         }
       >
         <div className="flex sm:gap-5 gap-1 mx-2 md:mx-5 lg:mx-20">
@@ -66,7 +66,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="flex items-center font-medium text-black sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
+          <div className="flex items-center font-medium sm:text-lg md:text-xl md:ml-10 lg:ml-20 lg:gap-5">
             <div className="cursor-pointer group transition-all duration-300 pl-3 sm:p-3">
               <a href="#home" onClick={(e) => handleClick(e)}>
                 Home

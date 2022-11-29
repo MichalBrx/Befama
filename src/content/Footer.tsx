@@ -7,63 +7,71 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full h-auto bg-black flex-wrap flex gap-8 justify-center py-5 text-white">
+    <div className="w-full h-auto bg-black flex-wrap flex gap-8 justify-center py-5 ">
       <div id="COMPANY" className="p-3 ">
-        <p className="text-center text-4xl font-impact">BEFAMA Sp. z o.o.</p>
-        <p className="text-center text-lg"> {t("slogan")} </p>
+        <p className="text-center text-4xl font-impact text-zinc-200">
+          BEFAMA Sp. z o.o.
+        </p>
+        <p className="text-center text-lg text-zinc-200"> {t("slogan")} </p>
       </div>
       <div id="ADRESS" className="p-2 ">
-        <h1 className="text-center text-2xl font-semibold"> {t("adress")} </h1>
-        <ul className="text-teal-300 text-center text-base">
-          <li className="my-2">
+        <h1 className="text-center text-2xl font-semibold text-zinc-200">
+          {" "}
+          {t("adress")}{" "}
+        </h1>
+        <ul className="text-center text-base">
+          <li className="my-2 text-teal-300 ">
             {t("street")} Północna 212 <br /> 43-376 Kalna
           </li>
-          <li className="my-2">
+          <li className="my-2 text-teal-300 ">
             {t("street")} J.Grabowskiego 4/4 <br /> 43-300 Bielsko-Biała
           </li>
         </ul>
       </div>
       <div id="CONTACT" className="p-2">
-        <h1 className="text-center text-2xl font-semibold"> {t("CONTACT")} </h1>
+        <h1 className="text-center text-2xl font-semibold text-zinc-100">
+          {" "}
+          {t("CONTACT")}{" "}
+        </h1>
         <ul className="text-teal-300 text-center text-base">
-          <li className="my-2">
+          <li className="my-2 text-teal-300 ">
             {t("phone")} +48 33 8 611 760 <br />
             e-mail: info@befama.com.pl
           </li>
-          <li className="my-2 underline md:no-underline">
+          <li className="my-2 underline md:no-underline text-teal-300 ">
             <a
               href="departmetnt"
-              onClick={() => navigate("/Department")}
+              onClick={() => navigate("/department")}
               className="link link-hover"
             >
               {" "}
               {t("dep1")}{" "}
             </a>
           </li>
-          <li className="my-2 underline md:no-underline">
+          <li className="my-2 underline md:no-underline text-teal-300 ">
             <a
               href="departmetnt"
-              onClick={() => navigate("/Department")}
+              onClick={() => navigate("/department")}
               className="link link-hover"
             >
               {" "}
               {t("dep2")}{" "}
             </a>
           </li>
-          <li className="my-2 underline md:no-underline">
+          <li className="my-2 underline md:no-underline text-teal-300 ">
             <a
               href="departmetnt"
-              onClick={() => navigate("/Department")}
+              onClick={() => navigate("/department")}
               className="link link-hover"
             >
               {" "}
               {t("dep3")}{" "}
             </a>
           </li>
-          <li className="my-2 underline md:no-underline">
+          <li className="my-2 underline md:no-underline text-teal-300 ">
             <a
               href="departmetnt"
-              onClick={() => navigate("/Department")}
+              onClick={() => navigate("/department")}
               className="link link-hover"
             >
               {" "}
@@ -74,7 +82,7 @@ const Footer = () => {
       </div>
 
       <div id="COPMANY NIP" className="p-2 max-w-xs">
-        <p className="text-center">
+        <p className="text-center text-zinc-100">
           {t("law")}
           <br />
           Nr KRS 0000370537
@@ -86,7 +94,7 @@ const Footer = () => {
       </div>
 
       <div id="WEB_AUTHOR" className="w-full text-center  text-gray-600 ">
-        <hr className="border-1 border-white" />
+        <hr className="border-1 border-zinc-100" />
         <div>
           <h1 className="p-2 mt-2"> Website created by Michal Haj </h1>
           <p className="font-semibold">Contact: </p>
