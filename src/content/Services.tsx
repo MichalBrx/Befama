@@ -40,7 +40,7 @@ const Services = () => {
             <p className="w-4/5 text-left pl-5"> {t("offer1")} </p>
           </div>
           <div className="flex justify-center p-3">
-            <FaScrewdriver className="w-8 h-8 self-center" />
+            <AiOutlineLineChart className="w-8 h-8 self-center" />
             <p className="w-4/5 text-left pl-5"> {t("offer2")} </p>
           </div>
           <div className="flex justify-center p-3">
@@ -56,21 +56,14 @@ const Services = () => {
             <p className="w-4/5 text-left pl-5 "> {t("offer5")} </p>
           </div>
           <div className="flex justify-center p-3">
-            <FaDropbox className="w-8 h-8 self-center" />
+            <MdOutlineMiscellaneousServices className="w-8 h-8 self-center" />
             <p className="w-4/5 text-left pl-5"> {t("offer6")} </p>
           </div>
           <div className="flex justify-center p-3">
             <GrMapLocation className="w-8 h-8 self-center" />
             <p className="w-4/5 text-left pl-5"> {t("offer7")} </p>
           </div>
-          <div className="flex sm:justify-center justify-start w-full sm:w-auto p-3 ">
-            <AiOutlineLineChart className="w-8 h-8 self-center" />
-            <p className="w-4/5 text-left pl-5"> {t("offer8")} </p>
-          </div>
-          <div className="flex justify-center p-3">
-            <MdOutlineMiscellaneousServices className="w-8 h-8 self-center" />
-            <p className="w-4/5 text-left pl-5"> {t("offer9")} </p>
-          </div>
+
           <div className="w-full mt-5">
             <button
               className="btn btn-primary mt-3"
