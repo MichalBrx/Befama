@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *{
     margin: 0px;
-    font-family: 'helvetica', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #232323;
 }
 html{

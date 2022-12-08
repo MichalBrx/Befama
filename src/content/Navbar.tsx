@@ -55,14 +55,14 @@ const Navbar = () => {
       <div
         id="NavBar"
         className={
-          "shadow-gray-700 shadow-inner z-30 bg-white fixed top-0 w-full sm:h-20 flex items-center duration-200"
+          "shadow-gray-700 border-b shadow-sm z-30 bg-white fixed top-0 w-full sm:h-20 flex items-center duration-200"
         }
       >
         <div className="flex sm:gap-5 gap-1 mx-2 md:mx-5 lg:mx-20">
           <div className="w-14 h-full sm:w-16 lg:w-20">
             <a href="#home" className="w-full h-full">
               <img
-                src="./logo.webp"
+                src="./logo.png"
                 alt="Logo Befama"
                 className="rounded-full h-12 m-1 w-auto sm:h-16"
               ></img>
@@ -76,19 +76,7 @@ const Navbar = () => {
               </a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span>
             </div>
-            {/* TEST TEST TEST TEST TEST */}
-            <div className="hidden lg:block">
-              <button
-                className="btn2 py-2 relative border-slate-100 w-20 tracking-wider leading-none overflow-hidden rounded-lg active:scale-95 duration-100"
-                type="button"
-              >
-                <span className="absolute inset-0 bg-gradient-to-r from-sky-600 to-sky-900"></span>
-                <span className="absolute inset-0 flex justify-center items-center duration-200 hover:text-white">
-                  O nas
-                </span>
-                O nas
-              </button>
-            </div>
+
 
             <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 w-20 text-center">
               <a href="#aboutUs" onClick={(e) => handleClick(e)}>

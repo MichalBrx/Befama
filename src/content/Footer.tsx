@@ -96,13 +96,9 @@ const Footer = () => {
       <div id="WEB_AUTHOR" className="w-full text-center  text-gray-600 ">
         <hr className="border-1 border-zinc-100" />
         <div>
-          <h1 className="p-2 mt-2"> Website created by Michal Haj </h1>
-          <p className="font-semibold">Contact: </p>
+          <h1 className="p-2 mt-2"> Befama ®2023</h1>
         </div>
-        <ul>
-          <li>tel.: 48 537 886 057</li>
-          <li>e-mail: michal.haj.business@gmail.com</li>
-        </ul>
+
       </div>
     </div>
   );

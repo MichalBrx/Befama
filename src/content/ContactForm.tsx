@@ -17,7 +17,7 @@ const ContactForm = () => {
   return (
     <div
       id="contact"
-      className="max-w-sm"
+      className="max-w-sm z-10"
       ref={ref}
       style={{
         transform: isInView ? "none" : "translateY(50px)",

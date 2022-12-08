@@ -82,7 +82,7 @@ const AboutUs = () => {
             className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 py-3"
             ref={ref1}
             style={{
-              transform: isInView1 ? "none" : "translateX(-200px)",
+              transform: isInView1 ? "none" : "translateX(-50px)",
               opacity: isInView1 ? 1 : 0,
               transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
@@ -103,7 +103,7 @@ const AboutUs = () => {
             className="card card-side bg-white shadow-xl flex border-t my-5 lg:ml-96 pr-5"
             ref={ref2}
             style={{
-              transform: isInView2 ? "none" : "translateX(200px)",
+              transform: isInView2 ? "none" : "translateX(50px)",
               opacity: isInView2 ? 1 : 0,
               transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
@@ -124,7 +124,7 @@ const AboutUs = () => {
             className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 items-center"
             ref={ref3}
             style={{
-              transform: isInView3 ? "none" : "translateX(-200px)",
+              transform: isInView3 ? "none" : "translateX(-50px)",
               opacity: isInView3 ? 1 : 0,
               transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
@@ -145,7 +145,7 @@ const AboutUs = () => {
             className="card card-side bg-white shadow-xl p-3 flex border-t my-5 lg:ml-96"
             ref={ref4}
             style={{
-              transform: isInView4 ? "none" : "translateX(200px)",
+              transform: isInView4 ? "none" : "translateX(50px)",
               opacity: isInView4 ? 1 : 0,
               transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
@@ -166,7 +166,7 @@ const AboutUs = () => {
             className="card card-side bg-white shadow-xl flex border-t my-5 lg:mr-96 items-center py-2"
             ref={ref5}
             style={{
-              transform: isInView5 ? "none" : "translateX(-200px)",
+              transform: isInView5 ? "none" : "translateX(-50px)",
               opacity: isInView5 ? 1 : 0,
               transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}

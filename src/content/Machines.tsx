@@ -90,7 +90,7 @@ const Machnies = () => {
       }}
     >
       <div className="w-full flex justify-center">
-        <h1 className="md:text-4xl text-3xl text-center font-bold  py-5 my-5 mb-10 rounded-lg w-3/5 sm:w-2/5">
+        <h1 className="md:text-5xl text-3xl text-center font-bold  py-5 my-5 mb-10 rounded-lg w-3/5 sm:w-2/5">
           {" "}
           {t("offer")}{" "}
         </h1>

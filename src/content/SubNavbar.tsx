@@ -59,7 +59,7 @@ const Navbar = () => {
               className="w-full h-full"
             >
               <img
-                src=".././logo.webp"
+                src=".././logo.png"
                 alt="Logo Befama"
                 className="rounded-full h-12 m-1 w-auto sm:h-16"
               ></img>
@@ -152,7 +152,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="dropdown dropdown-end md:mx-5 w-auto justify-center">
+          {/* <div className="dropdown dropdown-end md:mx-5 w-auto justify-center">
             <label tabIndex={0} className="">
               <GlobalOutlined
                 style={{ fontSize: "1.75rem", cursor: "pointer" }}
@@ -182,7 +182,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </form>
-          </div>
+          </div> */}
 
           <div
             className="tooltip tooltip-bottom hidden lg:block"
