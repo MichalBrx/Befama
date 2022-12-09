@@ -71,7 +71,7 @@ const Machine = () => {
         },
         {
           name: "AB19",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/2-wilk-rozluzniajacy-pickerab19a.webp",
           description: t("AB19"),
           parameters: [
             {
@@ -87,7 +87,7 @@ const Machine = () => {
       tag: [
         {
           name: "KMC",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/4-1-komory-mieszalnicze-kmc.webp",
           description: t("KMC"),
           parameters: [
             {
@@ -98,7 +98,7 @@ const Machine = () => {
         },
         {
           name: "MW6",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/4-2-komora-sekcyjna-mw6.webp",
           description: t("MW6"),
           parameters: [
             {
@@ -114,7 +114,7 @@ const Machine = () => {
       tag: [
         {
           name: "CU611, CU612, CU641",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/5.1- zgrzeblarki-cu611-cu612.webp",
           description: t("CU611"),
           parameters: [
             {
@@ -125,7 +125,7 @@ const Machine = () => {
         },
         {
           name: "CU661, CU669",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/5.2-zgrzeblarki-dwuzbiera-cu661.webp",
           description: t("CU661"),
           parameters: [
             {
@@ -141,7 +141,7 @@ const Machine = () => {
       tag: [
         {
           name: "CR",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/6.1-sys.zgrzebny.webp",
           description: t("CR"),
           parameters: [
             {
@@ -152,7 +152,7 @@ const Machine = () => {
         },
         {
           name: "CSW, CSP",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/6.2-sys.czesankowy.webp",
           description: t("CS"),
           parameters: [
             {
@@ -168,7 +168,7 @@ const Machine = () => {
       tag: [
         {
           name: "CU121",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/7-1-linia-laboratoryjna-cu121.webp",
           description: t("CU121"),
           parameters: [
             {
@@ -181,7 +181,7 @@ const Machine = () => {
         },
         {
           name: "3AGK",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/7.2-zgrzeblarkadofilcu.webp",
           description: t("3AGK"),
           parameters: [
             {
@@ -199,7 +199,7 @@ const Machine = () => {
       tag: [
         {
           name: "5W50",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/8-1-uk197130adacz-serii-5w50.webp",
           description: t("5W50"),
           parameters: [
             {
@@ -210,7 +210,7 @@ const Machine = () => {
         },
         {
           name: "5WN700",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/8-2-uk197130adacz-serii-5wn700.webp",
           description: t("5WN700"),
           parameters: [
             {
@@ -226,7 +226,7 @@ const Machine = () => {
       tag: [
         {
           name: "WD3 - WD6",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/9-1-rozci196133garki-runa-wd3-wd5.webp",
           description: t("WD"),
           parameters: [
             {
@@ -243,7 +243,7 @@ const Machine = () => {
       tag: [
         {
           name: "Szarpaki AC40, AC50",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/10-1-szarparki-ac40-ac50.webp",
           description: t("AC40"),
           parameters: [
             {
@@ -254,7 +254,7 @@ const Machine = () => {
         },
         {
           name: "Otwieracz zgrzeblący OZ, POZ",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/10.2-otwieracz-oz-poz.webp",
           description: t("POZ"),
           parameters: [
             {
@@ -266,7 +266,7 @@ const Machine = () => {
         },
         {
           name: "Szarpaki AC5, AB19",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/10-3-szarparki-ac5-ab19.webp",
           description: t("AC5"),
           parameters: [
             {
@@ -277,7 +277,7 @@ const Machine = () => {
         },
         {
           name: "Szarpak krajek AC4B",
-          src: "",
+          src: "10-4-szarparka-krajek-ac4b.webp",
           description: t("AC4B"),
           parameters: [
             {
@@ -293,7 +293,7 @@ const Machine = () => {
       tag: [
         {
           name: "Kondensery obrotowe, odpylajace",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/11-1-kondensery-odpylajace.webp",
           description: t("condensers"),
           parameters: [
             {
@@ -305,12 +305,12 @@ const Machine = () => {
         },
         {
           name: "Cyklony",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/11-2-cyklony.webp",
           description: t("cyclones"),
         },
         {
           name: "Filtry",
-          src: ".././eachmachine/",
+          src: ".././eachmachine/11-3-filtry500x300.webp",
           description: t("filters2"),
           parameters: [
             {
@@ -325,7 +325,7 @@ const Machine = () => {
       tag: [
         {
           name: t("pneumatic"),
-          src: ".././eachmachine/",
+          src: ".././eachmachine/12.1-instalacje-transp-pneum.webp",
           description: t("pneumatic_desc"),
         },
       ],
@@ -352,7 +352,7 @@ const Machine = () => {
                     <div className="md:hidden">
                       <div className="flex w-full justify-center flex-wrap">
                         <img
-                          src="../eachmachine/1-1-otwieracze-bel-ob1-ob2.webp"
+                          src={thisMachine.src}
                           className="w-3/4 max-w-md z-20 drop-shadow-2xl"
                         ></img>
                         <div className="z-10 bg-white justify-center flex max-w-xl w-11/12 py-16 -mt-24 pt-24 sm:py-20 sm:pt-44 sm:-mt-36 ">
@@ -452,7 +452,7 @@ const Machine = () => {
                               </div>
                             </div>
                             <img
-                              src="../eachmachine/1-1-otwieracze-bel-ob1-ob2.webp"
+                              src={thisMachine.src}
                               className="relative max-w-md self-center lg:max-w-3xl lg:w-full lg:ml-32 shadow-xl"
                             ></img>
                           </div>
