@@ -19,15 +19,23 @@ const Machine = () => {
           name: "OB1, OB2",
           src: ".././eachmachine/1-1-otwieracze-bel-ob1-ob2.webp",
           description: t("OB1"),
-          szerokosc: [1200, 1400, 1600],
-          moc: ["4,0", "4,2", "4,6"],
+          parameters: [
+            {
+              szerokosc: [1200, 1400, 1600],
+              moc: ["4,0", "4,2", "4,6"],
+            },
+          ],
         },
         {
           name: "OB1-E, OB2-E",
-          src: "",
-          description: " ",
-          szerokosc: [1400, 1600],
-          moc: ["4,2", "4,6"],
+          src: ".././eachmachine/1.2-Zasilarki-wagowe-z-wagą-elektroniczną-OB1-E_-OB2-E.webp",
+          description: t("OB2-E"),
+          parameters: [
+            {
+              szerokosc: [1400, 1600],
+              moc: ["4,2", "4,6"],
+            },
+          ],
         },
       ],
     },
@@ -37,9 +45,13 @@ const Machine = () => {
         {
           name: "TP, TPR",
           src: ".././eachmachine/2-1-transportery-zbiorcze-tp-tpr.webp",
-          description: " ",
-          szerokosc: [800, 1000],
-          moc: ["max 1,1"],
+          description: t("TP"),
+          parameters: [
+            {
+              szerokosc: [800, 1000],
+              moc: ["max 1,1"],
+            },
+          ],
         },
       ],
     },
@@ -48,17 +60,25 @@ const Machine = () => {
       tag: [
         {
           name: "AB6N, AB6A",
-          src: ".././types/AB6.webp",
-          description: " ",
-          szerokosc: [1000, 1500],
-          moc: ["21", "30"],
+          src: ".././eachmachine/3-1-wilk-zgrzeblacy-ab6n.webp",
+          description: t("AB6"),
+          parameters: [
+            {
+              szerokosc: [1000, 1500],
+              moc: ["21", "30"],
+            },
+          ],
         },
         {
           name: "AB19",
-          src: "",
-          description: " ",
-          szerokosc: [1000, 1500],
-          moc: ["14", "20"],
+          src: ".././eachmachine/",
+          description: t("AB19"),
+          parameters: [
+            {
+              szerokosc: [1000, 1500],
+              moc: ["14", "20"],
+            },
+          ],
         },
       ],
     },
@@ -67,17 +87,25 @@ const Machine = () => {
       tag: [
         {
           name: "KMC",
-          src: "",
-          description: " ",
-          szerokosc: [1500, 3000],
-          moc: ["4,7"],
+          src: ".././eachmachine/",
+          description: t("KMC"),
+          parameters: [
+            {
+              szerokosc: [1500, 3000],
+              moc: ["4,7"],
+            },
+          ],
         },
         {
           name: "MW6",
-          src: "",
-          description: " ",
-          szerokosc: [1200],
-          moc: ["8"],
+          src: ".././eachmachine/",
+          description: t("MW6"),
+          parameters: [
+            {
+              szerokosc: [1200],
+              moc: ["8"],
+            },
+          ],
         },
       ],
     },
@@ -86,17 +114,25 @@ const Machine = () => {
       tag: [
         {
           name: "CU611, CU612, CU641",
-          src: "",
-          description: " ",
-          szerokosc: [1800, 2000, 2200, 2500, 3000],
-          moc: [""],
+          src: ".././eachmachine/",
+          description: t("CU611"),
+          parameters: [
+            {
+              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              moc: [""],
+            },
+          ],
         },
         {
           name: "CU661, CU669",
-          src: ".././types/CU661.4.webp",
-          description: " ",
-          szerokosc: [1800, 2000, 2200, 2500, 3000],
-          moc: [""],
+          src: ".././eachmachine/",
+          description: t("CU661"),
+          parameters: [
+            {
+              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              moc: [""],
+            },
+          ],
         },
       ],
     },
@@ -105,17 +141,25 @@ const Machine = () => {
       tag: [
         {
           name: "CR",
-          src: ".././types/TypCR.webp",
-          description: " ",
-          szerokosc: [1800, 2000, 2200, 2500, 3000],
-          moc: [""],
+          src: ".././eachmachine/",
+          description: t("CR"),
+          parameters: [
+            {
+              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              moc: [""],
+            },
+          ],
         },
         {
           name: "CSW, CSP",
-          src: ".././types/TypCS.webp",
-          description: " ",
-          szerokosc: [1800, 2000, 2200, 2500, 3000],
-          moc: [""],
+          src: ".././eachmachine/",
+          description: t("CS"),
+          parameters: [
+            {
+              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              moc: [""],
+            },
+          ],
         },
       ],
     },
@@ -124,21 +168,29 @@ const Machine = () => {
       tag: [
         {
           name: "CU121",
-          src: "",
-          description: " ",
-          szerokosc: [500, 1000],
-          moc: ["min 4", "max 9"],
-          sredBebna: [500],
-          sredZbieracz: [500],
+          src: ".././eachmachine/",
+          description: t("CU121"),
+          parameters: [
+            {
+              szerokosc: [500, 1000],
+              moc: ["min 4", "max 9"],
+              sredBebna: [500],
+              sredZbieracz: [500],
+            },
+          ],
         },
         {
           name: "3AGK",
-          src: "",
-          description: " ",
-          szerokosc: [500],
-          moc: ["9"],
-          sredBebna: [1500],
-          sredZbieracz: [680],
+          src: ".././eachmachine/",
+          description: t("3AGK"),
+          parameters: [
+            {
+              szerokosc: [500],
+              moc: ["9"],
+              sredBebna: [1500],
+              sredZbieracz: [680],
+            },
+          ],
         },
       ],
     },
@@ -147,17 +199,25 @@ const Machine = () => {
       tag: [
         {
           name: "5W50",
-          src: "",
-          description: " ",
-          predkosc: ["max 50m/min"],
-          moc: ["19"],
+          src: ".././eachmachine/",
+          description: t("5W50"),
+          parameters: [
+            {
+              predkosc: ["max 50m/min"],
+              moc: ["19"],
+            },
+          ],
         },
         {
           name: "5WN700",
-          src: "",
-          description: " ",
-          predkosc: ["max 70m/min"],
-          moc: ["36"],
+          src: ".././eachmachine/",
+          description: t("5WN700"),
+          parameters: [
+            {
+              predkosc: ["max 70m/min"],
+              moc: ["36"],
+            },
+          ],
         },
       ],
     },
@@ -166,11 +226,15 @@ const Machine = () => {
       tag: [
         {
           name: "WD3 - WD6",
-          src: "",
-          description: " ",
-          szerokosc: ["min 2600", "max 4000"],
-          predkosc: ["1m/6min"],
-          moc: ["min 4", "max 8"],
+          src: ".././eachmachine/",
+          description: t("WD"),
+          parameters: [
+            {
+              szerokosc: ["min 2600", "max 4000"],
+              predkosc: ["1m/6min"],
+              moc: ["min 4", "max 8"],
+            },
+          ],
         },
       ],
     },
@@ -179,28 +243,49 @@ const Machine = () => {
       tag: [
         {
           name: "Szarpaki AC40, AC50",
-          src: "",
-          description: " ",
-          szerokosc: ["AC40-800", "AC50-1000", "AC50-1500"],
-          moc: ["min 36", "max 180"],
+          src: ".././eachmachine/",
+          description: t("AC40"),
+          parameters: [
+            {
+              szerokosc: ["AC40-800", "AC50-1000", "AC50-1500"],
+              moc: ["min 36", "max 180"],
+            },
+          ],
         },
         {
           name: "Otwieracz zgrzeblący OZ, POZ",
-          src: "",
-          description: " ",
-          szerokosc: [1000, 1500],
-          moc: ["min 24", "max 38"],
-          predkosc: ["max 10 m/min"],
+          src: ".././eachmachine/",
+          description: t("POZ"),
+          parameters: [
+            {
+              szerokosc: [1000, 1500],
+              moc: ["min 24", "max 38"],
+              predkosc: ["max 10 m/min"],
+            },
+          ],
         },
         {
           name: "Szarpaki AC5, AB19",
-          src: "",
-          description: " ",
-          szerokosc: ["AC5-500", "1000", "1500"],
-          moc: ["14", "28"],
+          src: ".././eachmachine/",
+          description: t("AC5"),
+          parameters: [
+            {
+              szerokosc: ["AC5-500", "1000", "1500"],
+              moc: ["14", "28"],
+            },
+          ],
         },
-        { name: "Szarpak krajek AC4B", src: "", description: " ",          szerokosc: [250, 500],
-        predkosc: ["max 15"], },
+        {
+          name: "Szarpak krajek AC4B",
+          src: "",
+          description: t("AC4B"),
+          parameters: [
+            {
+              szerokosc: [250, 500],
+              predkosc: ["max 15"],
+            },
+          ],
+        },
       ],
     },
     {
@@ -208,22 +293,30 @@ const Machine = () => {
       tag: [
         {
           name: "Kondensery obrotowe, odpylajace",
-          src: "",
-          description: " ",
-          szerokosc: [1000, 1200, 1500],
-          moc: ["min 1,5", "max 2,2"],
-          sredBebna: [548]
+          src: ".././eachmachine/",
+          description: t("condensers"),
+          parameters: [
+            {
+              szerokosc: [1000, 1200, 1500],
+              moc: ["min 1,5", "max 2,2"],
+              sredBebna: [548],
+            },
+          ],
         },
         {
           name: "Cyklony",
-          src: "",
-          description: " ",
+          src: ".././eachmachine/",
+          description: t("cyclones"),
         },
         {
           name: "Filtry",
-          src: "",
-          description: " ",
-          moc: ["min 2", "max 7,5"]
+          src: ".././eachmachine/",
+          description: t("filters2"),
+          parameters: [
+            {
+              moc: ["min 2", "max 7,5"],
+            },
+          ],
         },
       ],
     },
@@ -231,9 +324,9 @@ const Machine = () => {
       type: t("pneumatic"),
       tag: [
         {
-          name: "Instalacje transportu pneumatycznego",
-          src: "",
-          description: " ",
+          name: t("pneumatic"),
+          src: ".././eachmachine/",
+          description: t("pneumatic_desc"),
         },
       ],
     },
@@ -374,12 +467,14 @@ const Machine = () => {
         })}
         <div className="h-72 w-full bg-sky-400 my-32 items-center py-14">
           <h3 className="w-full text-center text-white text-4xl font-semibold my-5">
-            KONTAKT Z NAMI
+            {t("contact_with")}
           </h3>
           <p className="w-full text-center text-white text-xl">
             info@befama.com.pl
           </p>
-          <p className="w-full text-center text-white text-xl">ul.jakas tam</p>
+          <p className="w-full text-center text-white text-xl">
+            {t("street")} Północna 212
+          </p>
           <p className="w-full text-center text-white text-xl">Kalna</p>
         </div>
       </div>

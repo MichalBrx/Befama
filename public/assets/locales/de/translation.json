@@ -78,9 +78,8 @@
     "AB19": "",
     "AB19G": "",
     "OB1": "Die Wiegekastenspeiser OB1 - werden in de Mischanlagen zum Voröffnen von Fasern und zur Beschickung des Sammelförderers mit vorgegebenen Faserportionen verwendet. Charakteristik: Arbeitsbreite [mm] - 1000, 1500",
-    "OB2": "",
-    "KMC1500": "KMC1500 ist eine Dauerbetriebsmischkammer, die zur Bevorratung und Mischung des pneumatisch zugeführten Fasermaterials eingesetzt wird. Die Mischkammer hat kein eigenes Entleerungssystem, deshalb muss sie immer mit einem AW1-Speiser verwendet werden. Charakteristik:Arbeitsbreite [mm] - 1500, Rauminhalt [m3] - 15",
-    "KMC3000": "Die Kammer KMC3000 wurde für periodischen Betrieb entwickelt und deshalb oft paarweise zum Mischen und Bevorraten einer bestimmten Textilmaterialmenge eingesetzt. Die Füllung erfolgt pneumatisch mittels eines beweglichen Zyklons und die Entleerung mittels eines Nadeltuchs, der fahrbaren hinteren Wand und einem Bandförderer unten. Typen: KMC3000 75 - 75 [m3], KMC3000 95 - 95 [m3]. Charakteristik: Arbeitsbreite [mm] - 3000",
+    "OB2-E": "",
+    "KMC": "",
     "MW6": "",
     "Cutter": "",
     "3KA":"",
@@ -88,7 +87,6 @@
     "CR": "",
     "CS": "",
     "CU611": "",
-    "CU641": "",
     "CU661": "",
     "5W50": "",
     "5WN700": "",
@@ -105,5 +103,6 @@
     "hours": "Die Öffnungszeiten",
     "mon-fri": "Mo-Fr ",
     "sat-sun": "Sa-So ",
-    "closed": "geschlossen"
+    "closed": "geschlossen",
+    "contact_with": "Kontakt zu uns"
 }
