@@ -22,7 +22,7 @@ const Machine = () => {
           description: t("OB1"),
           parameters: [
             {
-              szerokosc: [1200, 1400, 1600],
+              szerokosc: ['1200', '1400', '1600'],
               moc: ["4,0", "4,2", "4,6"],
             },
           ],
@@ -33,7 +33,7 @@ const Machine = () => {
           description: t("OB2-E"),
           parameters: [
             {
-              szerokosc: [1400, 1600],
+              szerokosc: ['1400', '1600'],
               moc: ["4,2", "4,6"],
             },
           ],
@@ -49,7 +49,7 @@ const Machine = () => {
           description: t("TP"),
           parameters: [
             {
-              szerokosc: [800, 1000],
+              szerokosc: ['800', '1000'],
               moc: ["max 1,1"],
             },
           ],
@@ -65,7 +65,7 @@ const Machine = () => {
           description: t("AB6"),
           parameters: [
             {
-              szerokosc: [1000, 1500],
+              szerokosc: ['1000', '1500'],
               moc: ["21", "30"],
             },
           ],
@@ -76,7 +76,7 @@ const Machine = () => {
           description: t("AB19"),
           parameters: [
             {
-              szerokosc: [1000, 1500],
+              szerokosc: ['1000', '1500'],
               moc: ["14", "20"],
             },
           ],
@@ -92,7 +92,7 @@ const Machine = () => {
           description: t("KMC"),
           parameters: [
             {
-              szerokosc: [1500, 3000],
+              szerokosc: ['1500', '3000'],
               moc: ["4,7"],
             },
           ],
@@ -103,7 +103,7 @@ const Machine = () => {
           description: t("MW6"),
           parameters: [
             {
-              szerokosc: [1200],
+              szerokosc: ['1200'],
               moc: ["8"],
             },
           ],
@@ -119,7 +119,7 @@ const Machine = () => {
           description: t("CU611"),
           parameters: [
             {
-              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
             },
           ],
         },
@@ -129,7 +129,7 @@ const Machine = () => {
           description: t("CU661"),
           parameters: [
             {
-              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
             },
           ],
         },
@@ -144,7 +144,7 @@ const Machine = () => {
           description: t("CR"),
           parameters: [
             {
-              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
             },
           ],
         },
@@ -154,7 +154,7 @@ const Machine = () => {
           description: t("CS"),
           parameters: [
             {
-              szerokosc: [1800, 2000, 2200, 2500, 3000],
+              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
             },
           ],
         },
@@ -169,10 +169,10 @@ const Machine = () => {
           description: t("CU121"),
           parameters: [
             {
-              szerokosc: [500, 1000],
+              szerokosc: ['500', '1000'],
               moc: ["min 4", "max 9"],
-              sredBebna: [500],
-              sredZbieracz: [500],
+              sredBebna: ['500'],
+              sredZbieracz: ['500'],
             },
           ],
         },
@@ -182,10 +182,10 @@ const Machine = () => {
           description: t("3AGK"),
           parameters: [
             {
-              szerokosc: [500],
+              szerokosc: ['500'],
               moc: ["9"],
-              sredBebna: [1500],
-              sredZbieracz: [680],
+              sredBebna: ['1500'],
+              sredZbieracz: ['680'],
             },
           ],
         },
@@ -255,7 +255,7 @@ const Machine = () => {
           description: t("POZ"),
           parameters: [
             {
-              szerokosc: [1000, 1500],
+              szerokosc: ['1000', '1500'],
               moc: ["min 24", "max 38"],
               predkosc: ["max 10 m/min"],
             },
@@ -278,7 +278,7 @@ const Machine = () => {
           description: t("AC4B"),
           parameters: [
             {
-              szerokosc: [250, 500],
+              szerokosc: ['250', '500'],
               predkosc: ["max 15"],
             },
           ],
@@ -294,9 +294,9 @@ const Machine = () => {
           description: t("condensers"),
           parameters: [
             {
-              szerokosc: [1000, 1200, 1500],
+              szerokosc: ['1000', '1200', '1500'],
               moc: ["min 1,5", "max 2,2"],
-              sredBebna: [548],
+              sredBebna: ['548'],
             },
           ],
         },
@@ -329,6 +329,8 @@ const Machine = () => {
     },
   ];
 
+
+
   return (
     <div className="bg-stone-100">
       <ScrollToTop />
@@ -351,6 +353,7 @@ const Machine = () => {
                       <div className="flex w-full justify-center flex-wrap">
                         <img
                           src={thisMachine.src}
+                          alt="machines"
                           className="w-3/4 max-w-md z-20 drop-shadow-2xl"
                         ></img>
                         <div className="z-10 bg-white justify-center flex max-w-xl w-11/12 py-16 -mt-24 pt-24 sm:py-20 sm:pt-44 sm:-mt-36 ">
@@ -370,10 +373,10 @@ const Machine = () => {
                       </div>
                       <div className="mt-5  w-full z-10 mb-40">
                         <h2 className="text-lg sm:text-xl font-medium w-full text-center ">
-                          Paramtery
+                        {t("parameters")}
                         </h2>
                         <div className="mt-4 lg:mr-40">
-                                {thisMachine.parameters?.map((param, index) => (
+                                {thisMachine.parameters?.map((param: any, index) => (
                                   <div key={index}>
 
                                     <div
@@ -508,10 +511,10 @@ const Machine = () => {
                                 {thisMachine.description}
                               </p>
                               <div className="mt-4 lg:mr-40">
-                                {thisMachine.parameters?.map((param, index) => (
+                                {thisMachine.parameters?.map((param: any, index) => (
                                   <div  key={index}>
                                     <h2 className="text-xl lg:text-2xl font-medium my-5 ">
-                                      Paramtery
+                                    {t("parameters")}
                                     </h2>
                                     <div
                                       id="paramas"
@@ -522,7 +525,7 @@ const Machine = () => {
                                         <div>
                                           <ImStack className="text-3xl  w-full" />
                                           <h3 className="text-lg w-full text-center">
-                                            Szerokość <br /> robocza [mm]
+                                          {t("width")}
                                           </h3>
                                           <ul className="mt-2">
                                             {param.szerokosc.map(
@@ -543,7 +546,7 @@ const Machine = () => {
                                         <div>
                                           <BsArrowsFullscreen className="text-3xl w-full" />
                                           <h3 className="text-lg w-full text-center">
-                                            Średnica <br /> zbieracza [mm]
+                                          {t("doffer")} [mm]
                                           </h3>
                                           <ul className=" mt-2">
                                             {param.sredZbieracz.map(
@@ -564,7 +567,7 @@ const Machine = () => {
                                         <div>
                                           <BsLightning className="text-3xl w-full mb-3" />
                                           <h3 className="text-lg w-full text-center">
-                                            Moc [kW]
+                                          {t("power")} [kW]
                                           </h3>
                                           <ul className=" mt-6">
                                             {param.moc.map(
@@ -585,7 +588,7 @@ const Machine = () => {
                                         <div>
                                           <BsSpeedometer2 className="text-3xl w-full mb-3" />
                                           <h3 className="text-lg w-full text-center">
-                                            Prędkość 
+                                          {t("speed")}
                                           </h3>
                                           <ul className=" mt-6">
                                             {param.predkosc.map(
@@ -606,7 +609,7 @@ const Machine = () => {
                                         <div>
                                           <FaDrumSteelpan className="text-3xl w-full" />
                                           <h3 className="text-lg w-full text-center">
-                                            Średnica <br /> bębna [mm]
+                                          {t("cylinder")} [mm]
                                           </h3>
                                           <ul className=" mt-2">
                                             {param.sredBebna.map(
@@ -630,6 +633,7 @@ const Machine = () => {
                             </div>
                             <img
                               src={thisMachine.src}
+                              alt="Machine"
                               className="relative max-w-md self-center lg:max-w-3xl lg:w-full lg:ml-32 shadow-xl"
                             ></img>
                           </div>

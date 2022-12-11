@@ -101,6 +101,12 @@
     "mon-fri": "Mon-Fri ",
     "sat-sun": "Sat-Sun ",
     "closed": "closed",
-    "contact_with": "CONTACT WITH US"
+    "contact_with": "CONTACT WITH US",
+    "parameters": "Parameters",
+    "width": "Working width [mm]",
+    "power": "Power",
+    "cylinder": "Main cylinder diameter",
+    "doffer": "Doffer diameter",
+    "speed": "Speed"
 
 }

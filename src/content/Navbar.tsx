@@ -78,7 +78,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3 w-20 text-center">
+            <div className="cursor-pointer group transition-all duration-300 p-2 w-28 text-center">
               <a href="#aboutUs" onClick={(e) => handleClick(e)}>
                 {" "}
                 {t("about_us")}{" "}

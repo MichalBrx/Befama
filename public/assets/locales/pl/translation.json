@@ -102,6 +102,12 @@
     "mon-fri": "Pn-Pt ",
     "sat-sun": "Sb-Nd ",
     "closed": "nieczynne",
-    "contact_with": "KONTAKT Z NAMI"
+    "contact_with": "KONTAKT Z NAMI",
+    "parameters": "Parametry",
+    "power": "Moc",
+    "width": "Szerokość robocza",
+    "cylinder": "Średnica bębna",
+    "doffer": "Średnica zbieracza",
+    "speed": "Speed"
 
 }

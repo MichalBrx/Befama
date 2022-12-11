@@ -73,7 +73,7 @@ const Navbar = () => {
               </a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-black"></span>
             </div>
-            <div className="cursor-pointer group transition-all duration-300 p-2 sm:p-3  w-20 text-center">
+            <div className="cursor-pointer group transition-all duration-300 p-2  w-28 text-center">
               <a href="#aboutUs" onClick={(e) => handleClick(e)}>
                 {" "}
                 {t("about_us")}{" "}
