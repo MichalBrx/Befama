@@ -36,7 +36,7 @@ const Services = () => {
         </h1>
         <div className="flex gap-2 flex-wrap text-center justify-center">
           <div className="flex justify-center p-3">
-            <MdBuild className="w-8 h-8 self-center" />
+            <MdOutlineDesignServices className="w-8 h-8 self-center" />
             <p className="w-4/5 text-left pl-5"> {t("offer1")} </p>
           </div>
           <div className="flex justify-center p-3">
@@ -52,11 +52,11 @@ const Services = () => {
             <p className="w-4/5 text-left pl-5"> {t("offer4")} </p>
           </div>
           <div className="flex justify-center p-3">
-            <MdOutlineDesignServices className="w-8 h-8 self-center" />
+            <MdOutlineMiscellaneousServices className="w-8 h-8 self-center" />
             <p className="w-4/5 text-left pl-5 "> {t("offer5")} </p>
           </div>
           <div className="flex justify-center p-3">
-            <MdOutlineMiscellaneousServices className="w-8 h-8 self-center" />
+            <MdBuild className="w-8 h-8 self-center" />
             <p className="w-4/5 text-left pl-5"> {t("offer6")} </p>
           </div>
           <div className="flex justify-center p-3">

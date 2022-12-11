@@ -2,7 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { ImStack } from "react-icons/im";
-import { BsLightning } from "react-icons/bs";
+import { BsLightning, BsArrowsFullscreen, BsSpeedometer2 } from "react-icons/bs";
+import { FaDrumSteelpan } from "react-icons/fa";
 import Footer from "../content/Footer";
 import SubNavbar from "../content/SubNavbar";
 import ScrollToTop from "../functions/ScrollToTop";
@@ -17,7 +18,7 @@ const Machine = () => {
       tag: [
         {
           name: "OB1, OB2",
-          src: ".././eachmachine/1-1-otwieracze-bel-ob1-ob2.webp",
+          src: ".././eachmachine/1.1-Otwieracze-bel-OB1_-OB2.webp",
           description: t("OB1"),
           parameters: [
             {
@@ -119,7 +120,6 @@ const Machine = () => {
           parameters: [
             {
               szerokosc: [1800, 2000, 2200, 2500, 3000],
-              moc: [""],
             },
           ],
         },
@@ -130,7 +130,6 @@ const Machine = () => {
           parameters: [
             {
               szerokosc: [1800, 2000, 2200, 2500, 3000],
-              moc: [""],
             },
           ],
         },
@@ -146,7 +145,6 @@ const Machine = () => {
           parameters: [
             {
               szerokosc: [1800, 2000, 2200, 2500, 3000],
-              moc: [""],
             },
           ],
         },
@@ -157,7 +155,6 @@ const Machine = () => {
           parameters: [
             {
               szerokosc: [1800, 2000, 2200, 2500, 3000],
-              moc: [""],
             },
           ],
         },
@@ -349,6 +346,7 @@ const Machine = () => {
                 {machine.tag.map((thisMachine, index2) => (
                   <div key={index2}>
                     {/* ---> Mobile <--- */}
+
                     <div className="md:hidden">
                       <div className="flex w-full justify-center flex-wrap">
                         <img
@@ -374,33 +372,124 @@ const Machine = () => {
                         <h2 className="text-lg sm:text-xl font-medium w-full text-center ">
                           Paramtery
                         </h2>
-                        <div
-                          id="paramas"
-                          className="flex flex-wrap justify-center sm:mr-14"
-                        >
-                          <div className="flex flex-wrap justify-center my-2 max-w-md">
-                            <ImStack className="text-2xl sm:text-4xl w-full" />
-                            <h3 className="text-md w-full text-center">
-                              Szerokość robocza [mm]
-                            </h3>
-                            <ul className="text-sm sm:text-base mt-2 sm:mt-4">
-                              <li className="w-full text-center">3333</li>
-                              <li className="w-full text-center">2222</li>
-                              <li className="w-full text-center">1111</li>
-                            </ul>
-                          </div>
-                          <div className="flex flex-wrap justify-center my-2 max-w-md">
-                            <BsLightning className="text-2xl sm:text-4xl w-full" />
-                            <h3 className="text-md w-full text-center">
-                              Moc [kW]
-                            </h3>
-                            <ul className="text-sm sm:text-base mt-2 sm:mt-4">
-                              <li className="w-full text-center">33</li>
-                              <li className="w-full text-center">22</li>
-                              <li className="w-full text-center">11</li>
-                            </ul>
-                          </div>
-                        </div>
+                        <div className="mt-4 lg:mr-40">
+                                {thisMachine.parameters?.map((param, index) => (
+                                  <div key={index}>
+
+                                    <div
+                                      id="paramas"
+                                      className="flex flex-wrap justify-center sm:mr-14"
+                                    >
+
+                                      {param?.szerokosc ? (
+                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48 ">
+                                          <ImStack className="text-3xl w-full" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Szerokość <br /> robocza [mm]
+                                          </h3>
+                                          <ul className="mt-2 sm:mt-4">
+                                            {param.szerokosc.map(
+                                              (width: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {width}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.sredZbieracz ? (
+                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48" >
+                                          <BsArrowsFullscreen className="text-3xl w-full" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Średnica <br /> zbieracza [mm]
+                                          </h3>
+                                          <ul className="mt-2 sm:mt-4">
+                                            {param.sredZbieracz.map(
+                                              (zbieracz: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {zbieracz}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.moc ? (
+                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
+                                          <BsLightning className="text-3xl w-full" />
+                                          <h3 className="text-lg w-full text-center sm:mt-4">
+                                            Moc [kW]
+                                          </h3>
+                                          <ul className="mt-2 sm:mt-6">
+                                            {param.moc.map(
+                                              (pwr: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {pwr}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.predkosc ? (
+                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
+                                          <BsSpeedometer2 className="text-3xl w-full" />
+                                          <h3 className="text-lg w-full text-center sm:mt-4">
+                                            Prędkość 
+                                          </h3>
+                                          <ul className=" mt-2 sm:mt-6">
+                                            {param.predkosc.map(
+                                              (predkosc: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {predkosc}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.sredBebna ? (
+                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
+                                          <FaDrumSteelpan className="text-3xl w-full" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Średnica <br /> bębna [mm]
+                                          </h3>
+                                          <ul className="mt-2 sm:mt-4">
+                                            {param.sredBebna.map(
+                                              (sred: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {sred}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
                       </div>
                     </div>
                     {/* ---> Desktop <--- */}
@@ -418,37 +507,125 @@ const Machine = () => {
                               <p className="max-w-sm">
                                 {thisMachine.description}
                               </p>
-                              <div className="mt-4">
-                                <h2 className="text-xl lg:text-2xl font-medium my-5 ">
-                                  Paramtery
-                                </h2>
-                                <div
-                                  id="paramas"
-                                  className="flex flex-wrap justify-center gap-7"
-                                >
+                              <div className="mt-4 lg:mr-40">
+                                {thisMachine.parameters?.map((param, index) => (
                                   <div>
-                                    <ImStack className="text-3xl  w-full" />
-                                    <h3 className="text-lg w-full text-center">
-                                      Szerokość <br /> robocza [mm]
-                                    </h3>
-                                    <ul className="mt-4">
-                                      <li className="w-full text-center">33</li>
-                                      <li className="w-full text-center">22</li>
-                                      <li className="w-full text-center">11</li>
-                                    </ul>
+                                    <h2 className="text-xl lg:text-2xl font-medium my-5 ">
+                                      Paramtery
+                                    </h2>
+                                    <div
+                                      id="paramas"
+                                      className="grid grid-cols-2 gap-7" 
+                                    >
+
+                                      {param?.szerokosc ? (
+                                        <div key={index}>
+                                          <ImStack className="text-3xl  w-full" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Szerokość <br /> robocza [mm]
+                                          </h3>
+                                          <ul className="mt-2">
+                                            {param.szerokosc.map(
+                                              (width: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {width}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.sredZbieracz ? (
+                                        <div>
+                                          <BsArrowsFullscreen className="text-3xl w-full" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Średnica <br /> zbieracza [mm]
+                                          </h3>
+                                          <ul className=" mt-2">
+                                            {param.sredZbieracz.map(
+                                              (zbieracz: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {zbieracz}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.moc ? (
+                                        <div>
+                                          <BsLightning className="text-3xl w-full mb-3" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Moc [kW]
+                                          </h3>
+                                          <ul className=" mt-6">
+                                            {param.moc.map(
+                                              (pwr: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {pwr}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.predkosc ? (
+                                        <div>
+                                          <BsSpeedometer2 className="text-3xl w-full mb-3" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Prędkość 
+                                          </h3>
+                                          <ul className=" mt-6">
+                                            {param.predkosc.map(
+                                              (predkosc: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {predkosc}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                      {param?.sredBebna ? (
+                                        <div>
+                                          <FaDrumSteelpan className="text-3xl w-full" />
+                                          <h3 className="text-lg w-full text-center">
+                                            Średnica <br /> bębna [mm]
+                                          </h3>
+                                          <ul className=" mt-2">
+                                            {param.sredBebna.map(
+                                              (sred: any, index: any) => (
+                                                <li
+                                                  className="w-full text-center"
+                                                  key={index}
+                                                >
+                                                  {sred}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        </div>
+                                      ) : null}
+
+                                    </div>
                                   </div>
-                                  <div className="">
-                                    <BsLightning className="text-3xl w-full mb-3" />
-                                    <h3 className="text-lg w-full text-center">
-                                      Moc [kW]
-                                    </h3>
-                                    <ul className=" mt-8">
-                                      <li className="w-full text-center">33</li>
-                                      <li className="w-full text-center">22</li>
-                                      <li className="w-full text-center">11</li>
-                                    </ul>
-                                  </div>
-                                </div>
+                                ))}
                               </div>
                             </div>
                             <img
