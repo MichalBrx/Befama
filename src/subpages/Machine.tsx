@@ -509,7 +509,7 @@ const Machine = () => {
                               </p>
                               <div className="mt-4 lg:mr-40">
                                 {thisMachine.parameters?.map((param, index) => (
-                                  <div>
+                                  <div  key={index}>
                                     <h2 className="text-xl lg:text-2xl font-medium my-5 ">
                                       Paramtery
                                     </h2>
@@ -519,7 +519,7 @@ const Machine = () => {
                                     >
 
                                       {param?.szerokosc ? (
-                                        <div key={index}>
+                                        <div>
                                           <ImStack className="text-3xl  w-full" />
                                           <h3 className="text-lg w-full text-center">
                                             Szerokość <br /> robocza [mm]
