@@ -239,47 +239,46 @@ const Machine = () => {
       type: t("recovery"),
       tag: [
         {
-          name: "Szarpaki AC40, AC50",
+          name: t("szarparki"),
           src: ".././eachmachine/10-1-szarparki-ac40-ac50.webp",
           description: t("AC40"),
           parameters: [
             {
-              szerokosc: ["AC40-800", "AC50-1000", "AC50-1500"],
+              szerokosc: ["AC40 - 800", "AC50 - 1000", "AC50 - 1500"],
               moc: ["min 36", "max 180"],
             },
           ],
         },
         {
-          name: "Otwieracz zgrzeblący OZ, POZ",
+          name: t("otwieracz"),
           src: ".././eachmachine/10.2-otwieracz-oz-poz.webp",
           description: t("POZ"),
           parameters: [
             {
               szerokosc: ['1000', '1500'],
-              moc: ["min 24", "max 38"],
-              predkosc: ["max 10 m/min"],
+              moc: ["min 24", "max 38"]
             },
           ],
         },
         {
-          name: "Szarpaki AC5, AB19",
+          name: t("szarparki2"),
           src: ".././eachmachine/10-3-szarparki-ac5-ab19.webp",
           description: t("AC5"),
           parameters: [
             {
-              szerokosc: ["AC5-500", "1000", "1500"],
+              szerokosc: ["AC5 - 500", "1000", "1500"],
               moc: ["14", "28"],
             },
           ],
         },
         {
-          name: "Szarpak krajek AC4B",
-          src: "10-4-szarparka-krajek-ac4b.webp",
+          name: t("krajek") + " AC4B",
+          src: ".././eachmachine/10-4-szarparka-krajek-ac4b.webp",
           description: t("AC4B"),
           parameters: [
             {
               szerokosc: ['250', '500'],
-              predkosc: ["max 15"],
+              predkosc: ["max 15[m/min]"],
             },
           ],
         },
@@ -289,7 +288,7 @@ const Machine = () => {
       type: t("filters"),
       tag: [
         {
-          name: "Kondensery obrotowe, odpylajace",
+          name: t("kondensery"),
           src: ".././eachmachine/11-1-kondensery-odpylajace.webp",
           description: t("condensers"),
           parameters: [
@@ -301,12 +300,12 @@ const Machine = () => {
           ],
         },
         {
-          name: "Cyklony",
+          name: t("cyklony"),
           src: ".././eachmachine/11-2-cyklony.webp",
           description: t("cyclones"),
         },
         {
-          name: "Filtry",
+          name: t("filtry"),
           src: ".././eachmachine/11-3-filtry500x300.webp",
           description: t("filters2"),
           parameters: [

@@ -107,6 +107,13 @@
     "power": "Power",
     "cylinder": "Main cylinder diameter",
     "doffer": "Doffer diameter",
-    "speed": "Speed"
+    "speed": "Speed",
+    "szarparki": "Rag tearing machines",
+    "otwieracz": "Carding Openers POZ, OZ",
+    "szarparki2": "Tearing machines AC5, AB19",
+    "krajek": "Krajek tug",
+    "kondensery": "Rotary condensers",
+    "cyklony": "Cyclones",
+    "filtry": "Filters"
 
 }

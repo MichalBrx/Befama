@@ -108,6 +108,12 @@
     "width": "Szerokość robocza",
     "cylinder": "Średnica bębna",
     "doffer": "Średnica zbieracza",
-    "speed": "Speed"
-
+    "speed": "Prędkość",
+    "szarparki": "Szarparki AC40, AC50",
+    "otwieracz": "Otwieracz zgrzeblący OZ, POZ",
+    "szarparki2": "Szarparki AC5, AB19",
+    "krajek": "Szarpak krajek",
+    "kondensery": "Kondensery obrotowe, odpylajace",
+    "cyklony": "Cyklony",
+    "filtry": "Filtry"
 }
