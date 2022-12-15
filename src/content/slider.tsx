@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 
 const featuredProducts = [
-    ".././relokacja.webp",
+    ".././Relokacja.webp",
   ".././wilk.webp",
   ".././falowniki.webp"
 ];

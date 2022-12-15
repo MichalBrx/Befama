@@ -36,7 +36,7 @@ const Serv = () => {
             <div className="flex justify-around mt-4 max-w-xl md:grid md:ml-5 md:justify-between md:mt-8">
               <img src=".././lejki.webp" alt="img" className="w-1/4 md:w-36"></img>
               <img src=".././tasma.webp" alt="img" className="w-1/4 md:w-36"></img>
-              <img src=".././szarpak.webp" alt="img" className="w-1/4 md:w-36"></img>
+              <img src=".././Szarpak.webp" alt="img" className="w-1/4 md:w-36"></img>
             </div>
           </div>
         </div>
