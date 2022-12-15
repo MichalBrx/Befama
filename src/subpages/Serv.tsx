@@ -1,105 +1,67 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router";
 
 import Footer from "../content/Footer";
 import SubNavbar from "../content/SubNavbar";
 import ScrollToTop from "../functions/ScrollToTop";
+import { FaScrewdriver } from "react-icons/fa"
+import { TbTruckDelivery, TbGauge,TbRecycle } from "react-icons/tb"
+import { MdControlCamera } from "react-icons/md"
+import { BiCylinder } from "react-icons/bi"
+import { GiMechanicalArm } from "react-icons/gi"
+
+import Slider from '.././content/slider'
 
 const Serv = () => {
   const { t } = useTranslation();
 
+
   return (
     <div id="serv">
       <ScrollToTop />
-      <div className="h-16">
-        <SubNavbar />
-      </div>
-      <div className="flex justify-center m-1 lg:mt-10">
-        <div className="flex flex-wrap max-w-lg md:max-w-xl justify-center my-8 ">
-          <h3 className="text-5xl font-bold text-center items-center mb-10">
-            {" "}
-            {t("serv_title")}{" "}
-          </h3>
-          <div className="">
-            <div className="p-2 flex flex-wrap justify-center sm:justify-start shadow-lg border-t rounded-lg mt-5 text-center ">
-              <img
-                className="rounded-lg w-40 h-auto"
-                src="./walek.webp"
-                alt="Roller"
-              />
-              <h2 className="font-semibold text-xl p-1 mt-3 items-center max-w-xs w-full">
-                {" "}
-                {t("serv1")}{" "}
-              </h2>
-            </div>
+      <SubNavbar />
 
-            <div className="p-2 flex flex-wrap justify-center sm:justify-start shadow-lg border-t rounded-lg mt-5 text-center">
-              <img
-                className="rounded-lg w-40 h-auto"
-                src="./tasma.webp"
-                alt="Roller"
-              />
-              <h2 className="font-semibold text-xl p-1 mt-3 items-center max-w-xs w-full">
-                {" "}
-                {t("serv2")}{" "}
-              </h2>
-            </div>
-            <div className="p-2 flex flex-wrap justify-center sm:justify-start shadow-lg border-t rounded-lg mt-5 text-center">
-              <img
-                className="rounded-lg w-40 h-auto"
-                src="./szarpak.webp"
-                alt="Szarpak"
-              />
-              <h2 className="font-semibold text-xl p-1 mt-3 items-center max-w-xs w-full">
-                {" "}
-                {t("serv3")}{" "}
-              </h2>
-            </div>
-            <div className="p-2 flex flex-wrap justify-center sm:justify-start shadow-lg border-t rounded-lg mt-5 text-center">
-              <img
-                className="rounded-lg w-40 h-auto"
-                src="./lejki.webp"
-                alt="Roller"
-              />
-              <h2 className="font-semibold text-xl p-1 mt-3 items-center max-w-xs w-full">
-                {" "}
-                {t("serv4")}{" "}
-              </h2>
-            </div>
-            <div className="p-2 flex flex-wrap justify-center sm:justify-start shadow-lg border-t rounded-lg mt-5 text-center">
-              <img
-                className="rounded-lg w-40 h-auto"
-                src="./szczelinomierze.webp"
-                alt="Szczelinomierz"
-              />
-              <h2 className="font-semibold text-xl p-1 mt-3 items-center max-w-xs w-full">
-                {" "}
-                {t("serv5")}{" "}
-              </h2>
-            </div>
-            <div className="p-2 flex flex-wrap justify-center sm:justify-start shadow-lg border-t rounded-lg mt-5 text-center">
-              <img
-                className="rounded-lg w-32 rotate-90 mx-3 h-auto"
-                src="./oprawy.webp"
-                alt="Roller"
-              />
-              <h2 className="font-semibold text-xl p-1 mt-3 items-center max-w-xs w-full">
-                {" "}
-                {t("serv6")}{" "}
-              </h2>
-            </div>
-            <div className="p-2 flex flex-wrap justify-center sm:justify-start shadow-lg border-t rounded-lg mt-5 text-center">
-              <img
-                className="rounded-lg w-40 h-auto"
-                src="./wilk.webp"
-                alt="Roller"
-              />
-              <h2 className="font-semibold text-xl p-1 mt-3 items-center max-w-xs w-full">
-                {" "}
-                {t("serv7")}{" "}
-              </h2>
+      <div className="">
+        <div className="bg-gradient-to-b from-slate-600 via-slate-400 mt-14 sm:mt-20 pt-18 px-4 flex flex-wrap justify-center ">
+          <div className="w-full flex justify-center">
+          <h1 className="text-4xl text-white font-semibold w-full max-w-md text-center my-8 sm:mt-12 sm:text-left sm:ml-14 md:max-w-3xl">
+            {t("serv_title")}
+          </h1>
+          </div>
+          <div className="flex flex-wrap justify-center md:flex-nowrap">
+
+            <Slider />
+
+            <div className="flex justify-around mt-4 max-w-xl md:grid md:ml-5 md:justify-between md:mt-8">
+              <img src=".././lejki.webp" alt="img" className="w-1/4 md:w-36"></img>
+              <img src=".././tasma.webp" alt="img" className="w-1/4 md:w-36"></img>
+              <img src=".././szarpak.webp" alt="img" className="w-1/4 md:w-36"></img>
             </div>
           </div>
+        </div>
+        <div className="w-full justify-center flex mt-20">
+        <div className="my-10 mx-4 flex flex-wrap gap-3 font-medium md:bg-stone-100 md:max-w-4xl md:justify-self-center md:rounded-md md:py-7">
+          <div className="w-full flex-wrap flex items-center justify-center my-4"><BiCylinder className="w-7 h-7" /><h2 className="w-full text-center">{t("serv1")}</h2></div>
+          <div className="w-full flex-wrap flex items-center justify-center my-4"><GiMechanicalArm className="w-7 h-7" /><h2 className="w-full text-center">{t("serv2")}</h2></div>
+          <div className="w-full flex-wrap flex items-center justify-center my-4"><TbTruckDelivery className="w-7 h-7" /><h2 className="w-full text-center">{t("serv3")}</h2></div>
+          <div className="w-full flex-wrap flex items-center justify-center my-4"><TbRecycle className="w-7 h-7" /><h2 className="w-full text-center">{t("serv4")}</h2></div>
+          <div className="w-full flex-wrap flex items-center justify-center my-4"><TbGauge className="w-7 h-7" /><h2 className="w-full text-center">{t("serv5")}</h2></div>
+          <div className="w-full flex-wrap flex items-center justify-center my-4"><FaScrewdriver className="w-7 h-7" /><h2 className="w-full text-center">{t("serv6")}</h2></div>
+          <div className="w-full flex-wrap flex items-center justify-center my-4"><MdControlCamera className="w-7 h-7" /><h2 className="w-full text-center">{t("serv7")}</h2></div>
+        </div>
+        </div>
+        <div className="h-72 w-full bg-slate-600 my-32 items-center py-14">
+          <h3 className="w-full text-center text-white text-4xl font-semibold my-5">
+            {t("contact_with")}
+          </h3>
+          <p className="w-full text-center text-white text-xl">
+            info@befama.com.pl
+          </p>
+          <p className="w-full text-center text-white text-xl">
+            {t("street")} Północna 212
+          </p>
+          <p className="w-full text-center text-white text-xl">43-376 Kalna</p>
         </div>
       </div>
       <Footer />

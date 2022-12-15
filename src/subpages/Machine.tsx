@@ -645,7 +645,7 @@ const Machine = () => {
             );
           }
         })}
-        <div className="h-72 w-full bg-sky-400 my-32 items-center py-14">
+        <div className="h-72 w-full bg-slate-600 my-32 items-center py-14">
           <h3 className="w-full text-center text-white text-4xl font-semibold my-5">
             {t("contact_with")}
           </h3>
@@ -655,7 +655,7 @@ const Machine = () => {
           <p className="w-full text-center text-white text-xl">
             {t("street")} Północna 212
           </p>
-          <p className="w-full text-center text-white text-xl">Kalna</p>
+          <p className="w-full text-center text-white text-xl">43-376 Kalna</p>
         </div>
       </div>
 

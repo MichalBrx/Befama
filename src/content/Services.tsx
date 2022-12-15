@@ -7,7 +7,7 @@ import {
 } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
 import { AiOutlineLineChart } from "react-icons/ai";
-import { FaScrewdriver, FaTools, FaDropbox } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
