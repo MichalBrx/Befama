@@ -99,7 +99,6 @@ const Department = () => {
           <div className="card w-80 bg-white shadow-xl my-3 border-t">
             <div className="card-body">
               <h2 className="card-title text-2xl">{t("dep4")}</h2>
-              <h3 className="my-1 text-lg font-semibold">Czesław Krupa</h3>
               <h5 className="my-1">
                 <p className="font-semibold">e-mail:</p>zakupy@befama.com.pl
               </h5>

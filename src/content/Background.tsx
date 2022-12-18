@@ -16,7 +16,7 @@ const Background = () => {
     <div>
       <Hero />
 
-      <div className=" py-10 ">
+      <div id="machines" className=" py-10 ">
         <Machnies />
       </div>
 

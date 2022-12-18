@@ -1,9 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-import { ImStack } from "react-icons/im";
-import { BsLightning, BsArrowsFullscreen, BsSpeedometer2 } from "react-icons/bs";
+import {
+  BsLightning,
+  BsArrowsFullscreen,
+  BsSpeedometer2,
+} from "react-icons/bs";
 import { FaDrumSteelpan } from "react-icons/fa";
+import { AiOutlineColumnWidth } from "react-icons/ai";
 import Footer from "../content/Footer";
 import SubNavbar from "../content/SubNavbar";
 import ScrollToTop from "../functions/ScrollToTop";
@@ -22,8 +26,8 @@ const Machine = () => {
           description: t("OB1"),
           parameters: [
             {
-              szerokosc: ['1200', '1400', '1600'],
-              moc: ["4,0", "4,2", "4,6"],
+              szerokosc: ["1200 mm", "1400 mm ", "1600 mm"],
+              moc: ["4,0 kW", "4,2 kW", "4,6 kW"],
             },
           ],
         },
@@ -33,8 +37,8 @@ const Machine = () => {
           description: t("OB2-E"),
           parameters: [
             {
-              szerokosc: ['1400', '1600'],
-              moc: ["4,2", "4,6"],
+              szerokosc: ["1400 mm", "1600 mm"],
+              moc: ["4,2 kW", "4,6 kW"],
             },
           ],
         },
@@ -49,8 +53,8 @@ const Machine = () => {
           description: t("TP"),
           parameters: [
             {
-              szerokosc: ['800', '1000'],
-              moc: ["max 1,1"],
+              szerokosc: ["800 mm", "1000 mm"],
+              moc: ["max 1,1 kW"],
             },
           ],
         },
@@ -65,8 +69,8 @@ const Machine = () => {
           description: t("AB6"),
           parameters: [
             {
-              szerokosc: ['1000', '1500'],
-              moc: ["21", "30"],
+              szerokosc: ["1000 mm", "1500 mm"],
+              moc: ["21 kW", "30 kW"],
             },
           ],
         },
@@ -76,8 +80,8 @@ const Machine = () => {
           description: t("AB19"),
           parameters: [
             {
-              szerokosc: ['1000', '1500'],
-              moc: ["14", "20"],
+              szerokosc: ["1000 mm ", "1500 mm"],
+              moc: ["14 kW", "20 kW"],
             },
           ],
         },
@@ -92,8 +96,8 @@ const Machine = () => {
           description: t("KMC"),
           parameters: [
             {
-              szerokosc: ['1500', '3000'],
-              moc: ["4,7"],
+              szerokosc: ["1500 mm", "3000 mm"],
+              moc: ["4,7 kW"],
             },
           ],
         },
@@ -103,8 +107,8 @@ const Machine = () => {
           description: t("MW6"),
           parameters: [
             {
-              szerokosc: ['1200'],
-              moc: ["8"],
+              szerokosc: ["1200 mm"],
+              moc: ["8 kW"],
             },
           ],
         },
@@ -119,7 +123,13 @@ const Machine = () => {
           description: t("CU611"),
           parameters: [
             {
-              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
+              szerokosc: [
+                "1800 mm",
+                "2000 mm",
+                "2200 mm",
+                "2500 mm",
+                "3000 mm",
+              ],
             },
           ],
         },
@@ -129,7 +139,13 @@ const Machine = () => {
           description: t("CU661"),
           parameters: [
             {
-              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
+              szerokosc: [
+                "1800 mm",
+                "2000 mm",
+                "2200 mm",
+                "2500 mm",
+                "3000 mm",
+              ],
             },
           ],
         },
@@ -144,7 +160,13 @@ const Machine = () => {
           description: t("CR"),
           parameters: [
             {
-              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
+              szerokosc: [
+                "1800 mm",
+                "2000 mm",
+                "2200 mm",
+                "2500 mm",
+                "3000 mm",
+              ],
             },
           ],
         },
@@ -154,7 +176,13 @@ const Machine = () => {
           description: t("CS"),
           parameters: [
             {
-              szerokosc: ['1800', '2000', '2200', '2500', '3000'],
+              szerokosc: [
+                "1800 mm",
+                "2000 mm",
+                "2200 mm",
+                "2500 mm",
+                "3000 mm",
+              ],
             },
           ],
         },
@@ -169,10 +197,10 @@ const Machine = () => {
           description: t("CU121"),
           parameters: [
             {
-              szerokosc: ['500', '1000'],
-              moc: ["min 4", "max 9"],
-              sredBebna: ['500'],
-              sredZbieracz: ['500'],
+              szerokosc: ["500 mm", "1000 mm"],
+              moc: ["4 kW", "9 kW"],
+              sredBebna: ["500 mm"],
+              sredZbieracz: ["500 mm"],
             },
           ],
         },
@@ -182,10 +210,10 @@ const Machine = () => {
           description: t("3AGK"),
           parameters: [
             {
-              szerokosc: ['500'],
-              moc: ["9"],
-              sredBebna: ['1500'],
-              sredZbieracz: ['680'],
+              szerokosc: ["500 mm"],
+              moc: ["9 kW"],
+              sredBebna: ["1500 mm"],
+              sredZbieracz: ["680 mm"],
             },
           ],
         },
@@ -200,8 +228,8 @@ const Machine = () => {
           description: t("5W50"),
           parameters: [
             {
-              predkosc: ["max 50m/min"],
-              moc: ["19"],
+              predkosc: ["50 m/min"],
+              moc: ["19 kW"],
             },
           ],
         },
@@ -211,8 +239,8 @@ const Machine = () => {
           description: t("5WN700"),
           parameters: [
             {
-              predkosc: ["max 70m/min"],
-              moc: ["36"],
+              predkosc: ["70 m/min"],
+              moc: ["36 kW"],
             },
           ],
         },
@@ -227,9 +255,9 @@ const Machine = () => {
           description: t("WD"),
           parameters: [
             {
-              szerokosc: ["min 2600", "max 4000"],
-              predkosc: ["1m/6min"],
-              moc: ["min 4", "max 8"],
+              szerokosc: ["2600 mm", "3600 mm"],
+
+              moc: ["4 kW", "8 kW"],
             },
           ],
         },
@@ -244,8 +272,8 @@ const Machine = () => {
           description: t("AC40"),
           parameters: [
             {
-              szerokosc: ["AC40 - 800", "AC50 - 1000", "AC50 - 1500"],
-              moc: ["min 36", "max 180"],
+              szerokosc: ["AC40 - 800 mm", "AC50-1000 mm", "AC50- 1500 mm"],
+              moc: ["min 36 kW", "max 180 kW"],
             },
           ],
         },
@@ -255,8 +283,8 @@ const Machine = () => {
           description: t("POZ"),
           parameters: [
             {
-              szerokosc: ['1000', '1500'],
-              moc: ["min 24", "max 38"]
+              szerokosc: ["1000 mm", "1500 mm"],
+              moc: ["24 kW", "38 kW"],
             },
           ],
         },
@@ -266,8 +294,8 @@ const Machine = () => {
           description: t("AC5"),
           parameters: [
             {
-              szerokosc: ["AC5 - 500", "1000", "1500"],
-              moc: ["14", "28"],
+              szerokosc: ["AC5 - 500 mm", "AB19- 1000 mm", "AB19- 1500 mm"],
+              moc: ["14 kW", "28 kW", "36 kW"],
             },
           ],
         },
@@ -277,8 +305,8 @@ const Machine = () => {
           description: t("AC4B"),
           parameters: [
             {
-              szerokosc: ['250', '500'],
-              predkosc: ["max 15[m/min]"],
+              szerokosc: ["250 mm", "500 mm"],
+              moc: ["7 kW", "12 kW"],
             },
           ],
         },
@@ -293,9 +321,9 @@ const Machine = () => {
           description: t("condensers"),
           parameters: [
             {
-              szerokosc: ['1000', '1200', '1500'],
-              moc: ["min 1,5", "max 2,2"],
-              sredBebna: ['548'],
+              szerokosc: ["1000 mm", "1200 mm", "1500 mm"],
+              moc: ["1,5 kW", "2,2 kW", "2,8 kW"],
+              sredBebna: ["548 mm"],
             },
           ],
         },
@@ -308,11 +336,7 @@ const Machine = () => {
           name: t("filtry"),
           src: ".././eachmachine/11-3-filtry500x300.webp",
           description: t("filters2"),
-          parameters: [
-            {
-              moc: ["min 2", "max 7,5"],
-            },
-          ],
+          parameters: [],
         },
       ],
     },
@@ -327,8 +351,6 @@ const Machine = () => {
       ],
     },
   ];
-
-
 
   return (
     <div className="bg-stone-100">
@@ -372,126 +394,121 @@ const Machine = () => {
                       </div>
                       <div className="mt-5  w-full z-10 mb-40">
                         <h2 className="text-lg sm:text-xl font-medium w-full text-center ">
-                        {t("parameters")}
+                          {t("parameters")}
                         </h2>
                         <div className="mt-4 lg:mr-40">
-                                {thisMachine.parameters?.map((param: any, index) => (
-                                  <div key={index}>
-
-                                    <div
-                                      id="paramas"
-                                      className="flex flex-wrap justify-center sm:mr-14"
-                                    >
-
-                                      {param?.szerokosc ? (
-                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48 ">
-                                          <ImStack className="text-3xl w-full" />
-                                          <h3 className="text-lg w-full text-center">
-                                            Szerokość <br /> robocza [mm]
-                                          </h3>
-                                          <ul className="mt-2 sm:mt-4">
-                                            {param.szerokosc.map(
-                                              (width: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {width}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
-
-                                      {param?.sredZbieracz ? (
-                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48" >
-                                          <BsArrowsFullscreen className="text-3xl w-full" />
-                                          <h3 className="text-lg w-full text-center">
-                                            Średnica <br /> zbieracza [mm]
-                                          </h3>
-                                          <ul className="mt-2 sm:mt-4">
-                                            {param.sredZbieracz.map(
-                                              (zbieracz: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {zbieracz}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
-
-                                      {param?.moc ? (
-                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
-                                          <BsLightning className="text-3xl w-full" />
-                                          <h3 className="text-lg w-full text-center sm:mt-4">
-                                            Moc [kW]
-                                          </h3>
-                                          <ul className="mt-2 sm:mt-6">
-                                            {param.moc.map(
-                                              (pwr: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {pwr}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
-
-                                      {param?.predkosc ? (
-                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
-                                          <BsSpeedometer2 className="text-3xl w-full" />
-                                          <h3 className="text-lg w-full text-center sm:mt-4">
-                                            Prędkość 
-                                          </h3>
-                                          <ul className=" mt-2 sm:mt-6">
-                                            {param.predkosc.map(
-                                              (predkosc: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {predkosc}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
-
-                                      {param?.sredBebna ? (
-                                        <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
-                                          <FaDrumSteelpan className="text-3xl w-full" />
-                                          <h3 className="text-lg w-full text-center">
-                                            Średnica <br /> bębna [mm]
-                                          </h3>
-                                          <ul className="mt-2 sm:mt-4">
-                                            {param.sredBebna.map(
-                                              (sred: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {sred}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
-
-                                    </div>
+                          {thisMachine.parameters?.map((param: any, index) => (
+                            <div key={index}>
+                              <div
+                                id="paramas"
+                                className="flex flex-wrap justify-center sm:mr-14"
+                              >
+                                {param?.szerokosc ? (
+                                  <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48 ">
+                                    <AiOutlineColumnWidth className="text-3xl w-full" />
+                                    <h3 className="text-lg w-full text-center">
+                                      Szerokość <br /> robocza [mm]
+                                    </h3>
+                                    <ul className="mt-2 sm:mt-4">
+                                      {param.szerokosc.map(
+                                        (width: any, index: any) => (
+                                          <li
+                                            className="w-full text-center"
+                                            key={index}
+                                          >
+                                            {width}
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
                                   </div>
-                                ))}
+                                ) : null}
+
+                                {param?.moc ? (
+                                  <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
+                                    <BsLightning className="text-3xl w-full" />
+                                    <h3 className="text-lg w-full text-center sm:mt-4">
+                                      Moc [kW]
+                                    </h3>
+                                    <ul className="mt-2 sm:mt-6">
+                                      {param.moc.map((pwr: any, index: any) => (
+                                        <li
+                                          className="w-full text-center"
+                                          key={index}
+                                        >
+                                          {pwr}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                ) : null}
+
+                                {param?.sredZbieracz ? (
+                                  <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
+                                    <BsArrowsFullscreen className="text-3xl w-full" />
+                                    <h3 className="text-lg w-full text-center">
+                                      Średnica <br /> zbieracza [mm]
+                                    </h3>
+                                    <ul className="mt-2 sm:mt-4">
+                                      {param.sredZbieracz.map(
+                                        (zbieracz: any, index: any) => (
+                                          <li
+                                            className="w-full text-center"
+                                            key={index}
+                                          >
+                                            {zbieracz}
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  </div>
+                                ) : null}
+
+                                {param?.sredBebna ? (
+                                  <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
+                                    <FaDrumSteelpan className="text-3xl w-full" />
+                                    <h3 className="text-lg w-full text-center">
+                                      Średnica <br /> bębna [mm]
+                                    </h3>
+                                    <ul className="mt-2 sm:mt-4">
+                                      {param.sredBebna.map(
+                                        (sred: any, index: any) => (
+                                          <li
+                                            className="w-full text-center"
+                                            key={index}
+                                          >
+                                            {sred}
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  </div>
+                                ) : null}
+
+                                {param?.predkosc ? (
+                                  <div className="flex flex-wrap justify-center my-4 sm:my-2 max-w-md w-full sm:w-48">
+                                    <BsSpeedometer2 className="text-3xl w-full" />
+                                    <h3 className="text-lg w-full text-center sm:mt-4">
+                                      Prędkość
+                                    </h3>
+                                    <ul className=" mt-2 sm:mt-6">
+                                      {param.predkosc.map(
+                                        (predkosc: any, index: any) => (
+                                          <li
+                                            className="w-full text-center"
+                                            key={index}
+                                          >
+                                            {predkosc}
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  </div>
+                                ) : null}
                               </div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     {/* ---> Desktop <--- */}
@@ -510,124 +527,124 @@ const Machine = () => {
                                 {thisMachine.description}
                               </p>
                               <div className="mt-4 lg:mr-40">
-                                {thisMachine.parameters?.map((param: any, index) => (
-                                  <div  key={index}>
-                                    <h2 className="text-xl lg:text-2xl font-medium my-5 ">
-                                    {t("parameters")}
-                                    </h2>
-                                    <div
-                                      id="paramas"
-                                      className="grid grid-cols-2 gap-7" 
-                                    >
+                                {thisMachine.parameters?.map(
+                                  (param: any, index) => (
+                                    <div key={index}>
+                                      <h2 className="text-xl lg:text-2xl font-medium my-5 ">
+                                        {t("parameters")}
+                                      </h2>
+                                      <div
+                                        id="paramas"
+                                        className="grid grid-cols-2 gap-7"
+                                      >
+                                        {param?.szerokosc ? (
+                                          <div>
+                                            <AiOutlineColumnWidth className="text-3xl  w-full" />
+                                            <h3 className="text-lg w-full text-center">
+                                              {t("width")}
+                                            </h3>
+                                            <ul className="mt-2">
+                                              {param.szerokosc.map(
+                                                (width: any, index: any) => (
+                                                  <li
+                                                    className="w-full text-center"
+                                                    key={index}
+                                                  >
+                                                    {width}
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          </div>
+                                        ) : null}
 
-                                      {param?.szerokosc ? (
-                                        <div>
-                                          <ImStack className="text-3xl  w-full" />
-                                          <h3 className="text-lg w-full text-center">
-                                          {t("width")}
-                                          </h3>
-                                          <ul className="mt-2">
-                                            {param.szerokosc.map(
-                                              (width: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {width}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
+                                        {param?.moc ? (
+                                          <div>
+                                            <BsLightning className="text-3xl w-full mb-3" />
+                                            <h3 className="text-lg w-full text-center">
+                                              {t("power")} 
+                                            </h3>
+                                            <ul className=" mt-6">
+                                              {param.moc.map(
+                                                (pwr: any, index: any) => (
+                                                  <li
+                                                    className="w-full text-center"
+                                                    key={index}
+                                                  >
+                                                    {pwr}
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          </div>
+                                        ) : null}
 
-                                      {param?.sredZbieracz ? (
-                                        <div>
-                                          <BsArrowsFullscreen className="text-3xl w-full" />
-                                          <h3 className="text-lg w-full text-center">
-                                          {t("doffer")} [mm]
-                                          </h3>
-                                          <ul className=" mt-2">
-                                            {param.sredZbieracz.map(
-                                              (zbieracz: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {zbieracz}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
+                                        {param?.sredZbieracz ? (
+                                          <div>
+                                            <BsArrowsFullscreen className="text-3xl w-full" />
+                                            <h3 className="text-lg w-full text-center">
+                                              {t("doffer")} 
+                                            </h3>
+                                            <ul className=" mt-2">
+                                              {param.sredZbieracz.map(
+                                                (zbieracz: any, index: any) => (
+                                                  <li
+                                                    className="w-full text-center"
+                                                    key={index}
+                                                  >
+                                                    {zbieracz}
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          </div>
+                                        ) : null}
 
-                                      {param?.moc ? (
-                                        <div>
-                                          <BsLightning className="text-3xl w-full mb-3" />
-                                          <h3 className="text-lg w-full text-center">
-                                          {t("power")} [kW]
-                                          </h3>
-                                          <ul className=" mt-6">
-                                            {param.moc.map(
-                                              (pwr: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {pwr}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
+                                        {param?.sredBebna ? (
+                                          <div>
+                                            <FaDrumSteelpan className="text-3xl w-full" />
+                                            <h3 className="text-lg w-full text-center">
+                                              {t("cylinder")} 
+                                            </h3>
+                                            <ul className=" mt-2">
+                                              {param.sredBebna.map(
+                                                (sred: any, index: any) => (
+                                                  <li
+                                                    className="w-full text-center"
+                                                    key={index}
+                                                  >
+                                                    {sred}
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          </div>
+                                        ) : null}
 
-                                      {param?.predkosc ? (
-                                        <div>
-                                          <BsSpeedometer2 className="text-3xl w-full mb-3" />
-                                          <h3 className="text-lg w-full text-center">
-                                          {t("speed")}
-                                          </h3>
-                                          <ul className=" mt-6">
-                                            {param.predkosc.map(
-                                              (predkosc: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {predkosc}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
-
-                                      {param?.sredBebna ? (
-                                        <div>
-                                          <FaDrumSteelpan className="text-3xl w-full" />
-                                          <h3 className="text-lg w-full text-center">
-                                          {t("cylinder")} [mm]
-                                          </h3>
-                                          <ul className=" mt-2">
-                                            {param.sredBebna.map(
-                                              (sred: any, index: any) => (
-                                                <li
-                                                  className="w-full text-center"
-                                                  key={index}
-                                                >
-                                                  {sred}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </div>
-                                      ) : null}
-
+                                        {param?.predkosc ? (
+                                          <div>
+                                            <BsSpeedometer2 className="text-3xl w-full mb-3" />
+                                            <h3 className="text-lg w-full text-center">
+                                              {t("speed")}
+                                            </h3>
+                                            <ul className=" mt-6">
+                                              {param.predkosc.map(
+                                                (predkosc: any, index: any) => (
+                                                  <li
+                                                    className="w-full text-center"
+                                                    key={index}
+                                                  >
+                                                    {predkosc}
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          </div>
+                                        ) : null}
+                                      </div>
                                     </div>
-                                  </div>
-                                ))}
+                                  )
+                                )}
                               </div>
                             </div>
                             <img

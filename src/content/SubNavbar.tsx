@@ -185,7 +185,7 @@ const Navbar = () => {
           </div> */}
 
           <div
-            className="tooltip tooltip-bottom hidden lg:block"
+            className="tooltip tooltip-bottom hidden md:block mx-3"
             data-tip={t("youtube")}
           >
             <a
